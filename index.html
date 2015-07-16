@@ -49,7 +49,7 @@
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="files/damevski-vita.pdf">Vita</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a data-toggle="modal" data-target="#contactModal">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -61,7 +61,7 @@
         <div class="row">
 
 	  <div class="col-md-4">
-	    <div class="col-xs-2 col-sm-3 col-md-3">
+	    <div class="col-xs-3 col-sm-3 col-md-3">
 	      <div class="row">&nbsp;</div>
 	      <ul class="list-unstyled">
 		<li>
@@ -87,7 +87,7 @@
             </ul>
             </div>
 	    
-            <div class="col-xs-10 col-sm-9 col-md-9">
+            <div class="col-xs-9 col-sm-9 col-md-9">
               <div class="row">&nbsp;</div>
               <div class="row">
 		<img class="img-responsive" src="images/damevski.jpg"/>
@@ -620,10 +620,34 @@
 	  
 	</ul>
 	  
-      </div>
-      
-    </div>
+</div>
 
+<div class="modal fade" id="contactModal" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Contact Information</h4>
+      </div>
+      <div class="modal-body">
+	    <p><b>Office:</b> Hunter-McDaniel Building, Room 301b</p>
+	    <p><b>Mailing Address:</b>
+	      Kostadin Damevski;
+	      P.O. Box 9068;
+	      Department of Mathematics and Computer Science;
+	      Petersburg, VA 23806;
+	      USA
+	    <p><b>Telephone:</b> (804) 524-5735</p>
+	    <p><b>E-mail:</b> damevski (at) acm.org</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
 
     
     
