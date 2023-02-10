@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,110 +8,68 @@
 
   <meta name="description" content="Kostadin Kosta Damevski kostadamevski damevski">
   <meta name="author" content="Kostadin Damevski">
-  <!--- <link rel="icon" href="../../favicon.ico"> -->
 
   <title>Kostadin Damevski, Ph.D.</title>
 
-  <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-  <link href="academicons/academicons.css" rel="stylesheet">
-  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
-  <link href="bootstrap/css/bootstrap-social.css" rel="stylesheet">
-  <link href="kosta.css" rel="stylesheet">
-
-  <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-  <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-  <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
-
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
+  <link href="bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 </head>
 
 <body>
 
   <!-- Fixed navbar -->
-  <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
     <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <span class="navbar-brand">Kostadin Damevski @ VCU</span>
+      <a href="../" class="navbar-brand">Kostadin Damevski @ VCU</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Research Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#publications">Publications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="files/damevski-vita.pdf">Vita</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-md-auto">
+          <li class="nav-item">
+            <a target="_blank" rel="noopener" class="nav-link"
+              href="http://scholar.google.com/citations?user=3f847ugAAAAJ&hl=en&oi=ao"><i class="bi"></i> Google Scholar</a>
+          </li>
+          <li class="nav-item">
+            <a target="_blank" rel="noopener" class="nav-link" href="http://github.com/damevski"><i
+                class="bi bi-github"></i> GitHub</a>
+          </li>
+          <li class="nav-item">
+            <a target="_blank" rel="noopener" class="nav-link"
+              href="http://www.linkedin.com/pub/kostadin-damevski/0/14/b34"><i class="bi bi-linkedin"></i> LinkedIn</a>
+          </li>
+        </ul>
       </div>
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#teaching">Teaching</a></li>
-          <li><a href="#publications">Publications</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-<!--           <li><a href="http://vcu-swim-lab.github.io">SWIM Lab</a></li>  -->          
-          <li><a href="files/damevski-vita.pdf">Vita</a></li>
-          <li><a data-toggle="modal" data-target="#contactModal">Contact</a></li>
-        </ul>
-      </div><!--/.nav-collapse -->
+      <!--/.nav-collapse -->
     </div>
-  </nav>
+  </div>
 
   <div class="container">
-
+    <div class="row">&nbsp;</div>
+    <div class="row">&nbsp;</div>
+    <div class="row">&nbsp;</div>
     <div class="page-header">
       <div class="row">
-
-        <div class="col-md-4 col-lg-3 col-sm-5 col-xs-12">
+        <div class="col-md-4 col-lg-3 col-sm-5 col-xs-5">
           <div class="row">
-            <div class="col-xs-3 col-sm-3 col-md-3">
-              <div class="row">&nbsp;</div>
-              <ul class="list-unstyled">
-                <li>
-                  <a class="btn btn-lg btn-social-icon button-social-icon-styling" href="mailto:damevski@acm.org">
-                    <i class="fa fa-envelope"></i>
-                  </a>
-                </li>
-                <li>
-                  <a class="btn btn-lg btn-social-icon button-social-icon-styling btn-github" href="http://github.com/damevski">
-                    <i class="fa fa-github"></i>
-                  </a>
-                </li>
-                <li>
-                  <a class="btn btn-lg btn-social-icon button-social-icon-styling btn-linkedin" href="http://www.linkedin.com/pub/kostadin-damevski/0/14/b34">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </li>
-                <li>
-                  <a class="btn btn-lg btn-social-icon button-social-icon-styling" href="http://www.researchgate.net/profile/Kostadin_Damevski">
-                    <i class="ai ai-researchgate"></i>
-                  </a>
-                </li>
-                <li>
-                  <a class="btn btn-lg btn-social-icon button-social-icon-styling" href="http://scholar.google.com/citations?user=3f847ugAAAAJ&hl=en&oi=ao">
-                    <i class="ai ai-google-scholar"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-
-            <div class="col-xs-9 col-sm-9 col-md-9">
-              <div class="row">&nbsp;</div>
-              <div class="row">
-                <img class="img-thumbnail" src="images/damevski22.jpg"/>
-              </div>
-            </div>
-
-          </div> <!--- inner row-->
+            <img class="img-thumbnail" src="images/damevski22.jpg" />
+          </div>
         </div>
 
-        <div class="col-lg-9 col-md-8 col-sm-6 col-xs-12">
+        <div class="col-lg-9 col-md-8 col-sm-6 col-xs-6">
           <div class="row">&nbsp;</div>
-
-
-
           <div class="panel panel-default">
             <div class="panel-body">
               <p>I'm an Associate Professor in the
@@ -118,939 +77,978 @@
                 <a href="http://www.vcu.edu">Virginia Commonwealth University</a>. My current research
                 interests are centered around using machine learning and natural language processing to solve problems
                 in software engineering, specifically, to facilitate automation of a number of tasks that software
-                developers commonly perform. For instance, my research has focused on helping developers locate the code needed to fix
-                a specific bug and to improve how developers search for relevant documentation on the Web.</p>
+                developers commonly perform. For instance, my research has focused on helping developers locate the code
+                needed to fix a specific bug and to improve how developers search for relevant documentation on the Web. I'm also
+                interested in cybersecurity, i.e., writing secure code, and end-user programming. 
+              </p>
 
-                <p>At VCU, I lead
-                the <a href="http://vcu-swim-lab.github.io">Software Improvement (SWIM) Lab</a>.</p>
-                <p><i>I'm actively looking for collaborations with industry and
+              <p>At VCU, I lead the Software Improvement (SWIM) Lab</a>.</p>
+              <p><i>I'm actively looking for collaborations with industry and
                   motivated graduate and undergraduate students to join my research
                   group. Please contact me if you are interested.</i></p>
-                  <br>
-
-                </div>
-              </div>
+              <br>
 
             </div>
           </div>
-        </div>  <!-- /container -->
-
-        <div class="container" id="teaching">
-          <h3>Teaching</h3>
-          <ul>
-<!--             <li><b>Fall 2019</b></li>
-            <ul>
-              <li><a href="http://people.vcu.edu/~kdamevski/cmsc355/">CMSC 355 - Software Engineering: Specification and Design</a></li>
-            </ul>
- -->            
-            <li><b>Spring 2022</b></li>
-            <ul>
-              <li>CMSC 425/525 - Introduction to Software Analysis and Testing</li>
-            </ul>
-          </ul>
 
         </div>
-
-        <div class="container" id="publications">
-          <h3>Publications</h3>
-
-          <ul>
-
-            <li><b>2022</b></li>
-
-            <ul>
-              <li>
-                <p>Y. Zhao, K. Damevski, H. Chen. &quot; <b>A Systematic Survey of Just-In-Time Software Defect Prediction</b> &quot;. ACM Computing Surveys. 2022.
-                  <a type="button" class="btn btn-xs btn-primary" href="files/report_CSUR_2022.pdf">Preprint</a>
-                </p>
-              </li>
-            </ul>
-
-
-            <ul>
-              <li>
-                <div class="well well-sm">
-                  <p>M.M. Imran, Y. Jain, P. Chatterjee, K. Damevski. &quot; <b>Data Augmentation for Improving Emotion Recognition in Software Engineering Communication</b> &quot;. Proceedings of the 37th IEEE/ACM International Conference on Automated Software Engineering (ASE 2022), Technical Track, Ann Arbor, MI.
-                  <a type="button" class="btn btn-xs btn-primary" href="files/Emotion_Classification_ASE_2022.pdf">Preprint</a>
-                  </p>
-                </div>
-              </li>
-            </ul>
-
-            <ul>
-              <li>
-                <p>M. M. Imran, K. Damevski. &quot; <b>Using Clarification Questions to Improve Software Developers’ Web Search</b> &quot;. Information and Software Technology. 2022.   
-                  <a type="button" class="btn btn-xs btn-primary" href="files/web_cq_IST_2022.pdf">Preprint</a>
-                </p>
-              </li>
-            </ul>
-
-            <ul>
-              <li>
-                <div class="well well-sm">
-                  <p>A. Ciborowska, K. Damevski. &quot; <b>Fast Changeset-based Bug Localization Using BERT</b> &quot;. Proceedings of the 44th International Conference on Software Engineering (ICSE 2022), Technical Track, Pittsburgh, PA.
-                  <a type="button" class="btn btn-xs btn-primary" href="https://arxiv.org/abs/2112.14169">Preprint</a>
-                  </p>
-                </div>
-              </li>
-            </ul>
-
-            <ul>
-              <li>
-                <p>M. Frazier, S. Kumar, K. Damevski, L. Pollock. &quot; <b>Investigating User Perceptions of Conversational Agents for Software-related Exploratory Web Search</b> &quot;. Proceedings of the 44th International Conference on Software Engineering (ICSE 2022), NIER Track, Pittsburgh, PA.
-                <a type="button" class="btn btn-xs btn-primary" href="files/conv_agents_icse_nier_2022.pdf">Preprint</a>
-
-                </p>
-              </li>
-            </ul>
-
-            <ul>
-              <li>
-                <p>V. Sheth, K. Damevski. &quot; <b>Grouping Related Stack Overflow Comments for
-                  Software Developer Recommendation</b> &quot;. Journal of Automated Software Engineering. 2022. 
-                   <a type="button" class="btn btn-xs btn-primary" href="files/Grouping_Stack_Overflow_Comments_2022.pdf">Preprint</a>
-                </p>
-              </li>
-            </ul>
-
-
-            <li><b>2021</b></li>
-
-            <ul>
-              <li>
-	              <p>M. M. Imran, A. Ciborowska, K. Damevski. &quot; <b>Automatically Selecting Follow-up Questions for Deficient Bug Reports</b> &quot;. Proceedings of the 18th International Conference on Mining Software Repositories (MSR’21), Technical Track, Madrid, Spain.
-	              <a type="button" class="btn btn-xs btn-primary" href="files/bugautoq_msr21_preprint.pdf">Preprint</a>
-	              </p>
-              </li>
-            </ul>
-
-            <ul>
-              <li>
-                <div class="well well-sm">
-                  <p>P. Chatterjee, K. Damevski, L. Pollock. &quot; <b>Automatic Extraction of Opinion-based Q&A from Online Developer Chats </b> &quot;. Proceedings of the 43rd International Conference on Software Engineering (ICSE 2021), Technical Track, Madrid, Spain.
-                  <a type="button" class="btn btn-xs btn-primary" href="files/chaterjee_isce2021.pdf">Preprint</a>
-                  </p>
-                </div>
-              </li>
-            </ul>
-
-            <ul>
-              <li>
-	            <p>P. Chatterjee, K. Damevski, N. A. Kraft, and L. Pollock. &quot; <b>Automatically Identifying the Quality of Developer Chats for Post Hoc Use</b> &quot;. ACM Transactions on Software Engineering and Methodology (TOSEM). 2021.
-	        	<a type="button" class="btn btn-xs btn-primary" href="files/posthoc_tosem2021.pdf">Preprint</a>
-	        	</p>
-              </li>
-            </ul>
-
-            <li><b>2020</b></li>
-
-            <ul>
-              <li>
-                <div>
-                  <p>A. Ciborowska, K. Damevski. &quot; <b>Recognizing Developer Activity Based on Joint Modeling of Code and Command Interactions</b> &quot;. IEEE Access, 2020.
-                    <a type="button" class="btn btn-xs btn-primary" href="files/devact_ieeeaccess2020.pdf">Preprint</a>
-<!--                   <a type="button" class="btn btn-xs btn-primary" href="https://ieeexplore.ieee.org/abstract/document/9268948">Paper</a> -->
-                  </p>
-                </div>
-              </li>
-            </ul>
-
-            <ul>
-              <li>
-                <div>
-                  <p>P. Chatterjee, K. Damevski, N.A. Kraft, L. Pollock. &quot; <b>Software-related Slack Chats with Disentangled Conversations</b> &quot;. In Proceedings of the 17th International Conference on Mining Software Repositories (MSR’20) - Data Showcase Track, Seoul, South Korea, 2020. 
-                  <a type="button" class="btn btn-xs btn-primary" href="files/slackdata_msr_2020.pdf">Preprint</a>
-                  </p>
-                </div>
-              </li>
-            </ul>
-
-            <li><b>2019</b></li>
-
-            <ul>
-              <li>
-                <div>
-                  <p>M.A. Nishi, K. Damevski. &quot; <b>Automatically Identifying Valid API Versions for Software Development Tutorials on the Web</b> &quot;. Journal of Software: Evolution and Process, 2019. <i>accepted</i>
-                  <a type="button" class="btn btn-xs btn-primary" href="files/tutver_jsep2019_preprint.pdf">Preprint</a>
-                  </p>
-                </div>
-              </li>
-            </ul>
-
-            <ul>
-              <li>
-                <div>
-                  <p>H. Chen, K. Damevski, D. Shepherd, N. A. Kraft. &quot; <b>Modeling Hierarchical Usage Context for Software Exceptions based on Interaction Data</b> &quot;. Journal of Automated Software Engineering, 2019.
-                  <a type="button" class="btn btn-xs btn-primary" href="files/nhdp_jase19_preprint.pdf">Preprint</a>
-                  </p>
-                </div>
-              </li>
-            </ul>
-
-            <ul>
-              <li>
-                <div class="well well-sm">
-                  <p>H. Chen, J. Coogle, K. Damevski. &quot; <b>Modeling Stack Overflow Tags and Topics as a Hierarchy of Concepts</b> &quot;. Journal of Systems and Software, 2019.
-                  <a type="button" class="btn btn-xs btn-primary" href="files/sotags_jss19_preprint.pdf">Preprint</a>
-                  </p>
-                </div>
-              </li>
-            </ul>
-
-            <ul>
-              <li>
-                <div>
-                  <p>H. Chen, A. Ciborowska, K. Damevski. &quot; <b>Using Automated Prompts for Student Reflection on Computer Security Concepts</b> &quot;. In Proceedings of the 24th Annual Conference on Innovation and Technology in Computer Science Education (ITiCSE’19), Aberdeen, UK, 2019.
-                  <a type="button" class="btn btn-xs btn-primary" href="files/reflector_iticse19_preprint.pdf">Preprint</a>
-                  </p>
-                </div>
-              </li>
-            </ul>
-
-            <ul>
-              <li>
-                <div>
-                  <p>P. Chatterjee, K. Damevski, L. Pollock, V. Augustine, N.A. Kraft. &quot; <b>Exploratory Study of Slack Q&A Chats as a Mining Source for Software Engineering Tools </b> &quot;. In Proceedings of the 16th International Conference on Mining Software Repositories (MSR’19), Montreal, Canada, 2019.
-                  <a type="button" class="btn btn-xs btn-primary" href="files/chatterjee-msr19-preprint.pdf">Preprint</a>
-                  </p>
-                </div>
-              </li>
-            </ul>
-
-
-            <ul>
-              <li>
-                <div>
-                  <p>M.A. Nishi, A. Ciborowska, K. Damevski. &quot; <b>Characterizing Duplicate Code Snippets between Stack Overflow and Tutorials</b> &quot;. In Proceedings of the 16th International Conference on Mining Software Repositories (MSR’19) - Mining Challenge, Montreal, Canada, 2019.
-                  <a type="button" class="btn btn-xs btn-primary" href="files/nishi-msr19-preprint.pdf">Preprint</a>
-                  </p>
-                </div>
-              </li>
-            </ul>
-
-
-          
-            <li><b>2018</b></li>
-
-            <ul>
-              <li>
-                <div class="well well-sm">
-                  <p>C.S. Corley, K. Damevski, N. Kraft. &quot; <b>Changeset-Based Topic Modeling of Software Repositories</b> &quot;. IEEE Transactions on Software Engineering, 2018.
-                  <a type="button" class="btn btn-xs btn-primary" href="files/corley_online_lda_2018_preprint.pdf">Preprint</a>
-                  <a type="button" class="btn btn-xs btn-primary" href="https://doi.org/10.1109/TSE.2018.2874960">DOI</a>
-                  </p>
-                </div>
-              </li>
-            </ul>
-
-
-            <ul>
-              <li>
-                <div>
-                  <p>A. Ciborowska, N. Kraft, K. Damevski. &quot; <b>Detecting and Characterizing Developer Behavior Following Opportunistic Reuse of Code Snippets from the Web</b> &quot;. In Proceedings of the 15th International Conference on Mining Software Repositories (MSR’18), Gothenburg, Sweden, 2018.
-                  <b class="text-danger"><i>MSR'18 Mining Challenge Winner</i></b>
-                  <a type="button" class="btn btn-xs btn-primary" href="files/ciborowska_msr18_preprint.pdf">Preprint</a>
-                  </p>
-                </div>
-              </li>
-            </ul>
-
-            <ul>
-              <li>
-                <div>
-                  <p>C. Greco, T. Haden, K. Damevski. &quot; <b>StackInTheFlow: Behavior-Driven Recommendation System for Stack Overflow Posts</b> &quot;. In Proceedings of the International Conference on Software Engineering (ICSE 2018) -- Tool Demo Track, Gothenburg, Sweden, 2018.
-                  <a type="button" class="btn btn-xs btn-primary" href="files/greco_icse18_preprint.pdf">Preprint</a>
-                  </p>
-                </div>
-              </li>
-            </ul>
-
-            <li><b>2017</b></li>
-
-            <ul>
-              <li>
-                <div>
-                  <p>M.A. Nishi, K. Damevski. &quot; <b>Scalable Code Clone Detection and Search based on Adaptive Prefix Filtering</b> &quot;. Journal of Systems and Software. vol.137, pp.130-142, 2017.
-                    <a type="button" class="btn btn-xs btn-primary" href="files/nishi_scalable_2017_preprint.pdf">Preprint</a>
-                    <a type="button" class="btn btn-xs btn-primary" href="https://doi.org/10.1016/j.jss.2017.11.039">DOI</a>
-                  </p>
-                </div>
-              </li>
-            </ul>
-
-            <ul>
-              <li>
-                <div class="well well-sm">
-                  <p>K. Damevski, H. Chen, D.C. Shepherd, N.A. Kraft, L. Pollock. &quot; <b>Predicting Future Developer Behavior in the IDE Using Topic Models</b> &quot;. IEEE Transactions on Software Engineering. 2017.
-                   <b class="text-danger"><i>Journal First @ ICSE'18</i></b>
-                   <a type="button" class="btn btn-xs btn-primary" href="files/lda_for_interactions_2017.pdf">Preprint</a>
-                   <a type="button" class="btn btn-xs btn-primary" href="https://doi.org/10.1109/TSE.2017.2748134">DOI</a>
-                  </p>
-                </div>
-              </li>
-            </ul>
-
-            <ul>
-              <li>
-                <p>Z. Coker, K. Damevski, C. Le Goues, N. A. Kraft, D. Shepherd, L. Pollock. &quot;
-                  <b>Behavior Metrics for Prioritizing Investigations of Exceptions</b> &quot;. In Proceedings of the IEEE International Conference on Software Maintenance and Evolution (ICSME 2017) -- Industry Track, Shanghai, China, 2017.
-                  (<i>Acceptance Rate = 35%</i>)
-                  <a type="button" class="btn btn-xs btn-primary" href="files/coker_behavior_2017_preprint.pdf">Preprint</a>
-                  <a type="button" class="btn btn-xs btn-primary" href="https://doi.org/10.1109/ICSME.2017.62">DOI</a>
-                </p>
-              </li>
-            </ul>
-
-            <ul>
-              <li>
-                <p>J. Schneider, A. Bernstein, J. vom Brocke, K. Damevski, D. C. Shepherd. &quot; <b>Detecting Plagiarism based on the Creation Process</b> &quot;. IEEE Transactions on Learning Technologies. 2017.
-                  <a type="button" class="btn btn-xs btn-primary" href="http://dx.doi.org/10.1109/TLT.2017.2720171">DOI</a>
-                </p>
-              </li>
-            </ul>
-
-            <ul>
-              <li>
-                <p>S.M. Naim, K. Damevski, M.S. Hossain. &quot; <b>Reconstructing and Evolving Software Architectures Using a Coordinated Clustering Framework</b> &quot;. Journal of Automated Software Engineering. 2017.
-
-                  <a type="button" class="btn btn-xs btn-primary" href="http://dx.doi.org/10.1007/s10515-017-0211-8">DOI</a>
-                  <a type="button" class="btn btn-xs btn-primary" href="http://vcu-swim-lab.github.io/cchd">Data</a>
-                </p>
-              </li>
-            </ul>
-
-            <ul>
-              <li>
-                <p>P. Chatterjee, M.A. Nishi, K. Damevski, V. Augustine, L. Pollock, N. Kraft. &quot; <b>What Information about Code Snippets Is Available in Different Software-Related Documents? An Exploratory Study</b> &quot;. In Proceedings of the 24th IEEE International Conference on Software Analysis, Evolution, and Reengineering (SANER 2017) -- Early Research Achievements (ERA) Track, Klagenfurt, Austria. (<i>Acceptance Rate = 32.5%</i>)
-                  <a type="button" class="btn btn-xs btn-primary" href="files/chatterjee-saner17.pdf">Preprint</a>
-                  <a type="button" class="btn btn-xs btn-primary" href="https://doi.org/10.1109/SANER.2017.7884638">DOI</a>
-                </p>
-              </li>
-            </ul>
-
-            <li><b>2016</b></li>
-
-            <ul>
-              <li>
-                <div class="well well-sm">
-                  <p>K. Damevski, D. Shepherd, J. Schneider, L. Pollock. &quot; <b>Mining Sequences of Developer Interactions in Visual Studio for Usage Smells</b> &quot;. IEEE Transactions on Software Engineering. 2016.
-                    <b class="text-danger"><i>Journal First @ ICSE'17</i></b>
-                    <a type="button" class="btn btn-xs btn-primary" href="files/blaze_pattern_mining.pdf">Preprint</a>
-                    <a type="button" class="btn btn-xs btn-primary" href="http://dx.doi.org/10.1109/TSE.2016.2592905">DOI</a>
-                    <a type="button" class="btn btn-xs btn-primary" href="https://abb-iss.github.io/DeveloperInteractionLogs/">Data</a>
-                  </p>
-                </div>
-              </li>
-            </ul>
-
-            <ul>
-              <li>
-                <p>X. Ge, D. Shepherd, K. Damevski, E. Murphy-Hill. &quot; <b>Design and Evaluation of a Multi-Recommendation System for Local Code Search</b> &quot;. Journal of Visual Languages and Computing. 2016.
-                  <a type="button" class="btn btn-xs btn-primary" href="files/sando-rec.pdf">Preprint</a>
-                  <a type="button" class="btn btn-xs btn-primary" href="http://dx.doi.org/10.1016/j.jvlc.2016.07.002">DOI</a>
-                </p>
-              </li>
-            </ul>
-
-
-            <ul>
-              <li>
-                <p>J-S. Lee, K. Damevski, H. Chen. &quot; <b>Exploring Computer Science Students’
-                  Learning of Sensor-Driven Mobile App Design: A Case Study</b> &quot;. International Journal of Teaching and Case Studies. 2016.
-                  <a type="button" class="btn btn-xs btn-primary" href="files/lee2016exploring.pdf">Preprint</a>
-                </p>
-              </li>
-            </ul>
-
-            <ul>
-              <li>
-                <p>K. Damevski, H. Chen, D. Shepherd, L. Pollock. &quot; <b>Interactive Exploration of Developer Interaction Traces using a Hidden Markov Model</b> &quot;. In Proceedings of the 13th International Conference on Mining Software Repositories (MSR’16), Austin, TX, May 14-15, 2016, 10 pages
-                  (<i>Acceptance Rate = 27%</i>)
-                  <a type="button" class="btn btn-xs btn-primary" href="files/damevski_msr_16.pdf">Preprint</a>
-                  <a type="button" class="btn btn-xs btn-primary" href="files/msr-2016-slides.pdf">Slides</a>
-                </p>
-              </li>
-            </ul>
-
-            <li><b>2015</b></li>
-
-            <ul>
-              <li>
-                <p>K. Damevski, D. Shepherd, N. Kraft, L. Pollock. &quot; <b>Supporting Developers in Porting Software via Combined Textual and Structural Analysis of Software Artifacts</b> &quot;. Computational Science & Engineering Software Sustainability and Productivity Challenges (CSESSP Challenges) - Position Paper.
-                  <a type="button" class="btn btn-xs btn-primary" href="files/csessp_2015.pdf">Preprint</a>
-                  <a type="button" class="btn btn-xs btn-primary" href="files/poster_csessp.pdf">Poster</a>
-                </p>
-              </li>
-            </ul>
-
-            <ul>
-              <li>
-                <p>C. Corley, K. Damevski, N. Kraft. &quot; <b>Exploring the Use of Deep Learning for Feature Location </b> &quot;. Proceedings of the International Conference on Software Maintenance and Evolution (ICSME 2015) –
-                  Early Research Achievements (ERA) Track, Bremen, Germany.
-                  (<i>Acceptance Rate = 35%</i>)
-                  <a type="button" class="btn btn-xs btn-primary" href="files/Corley-etal_2015a.pdf">Preprint</a>
-                </p>
-              </li>
-            </ul>
-
-            <ul>
-              <li>
-                <p>D. Shepherd, K. Damevski, L. Pollock. &quot; <b>How and When to Transfer Software Engineering Research
-                  via Extensions</b> &quot;. Proceedings of the International Conference on Software Engineering (ICSE 2015) –
-                  Software Engineering in Practice (SEIP) Track, Florence, Italy.
-                  (<i>Short Paper Acceptance Rate = 50%</i>)
-                  <a type="button" class="btn btn-xs btn-primary" href="files/Shepherd_SEIP_2015.pdf">Preprint</a>
-                </p>
-              </li>
-            </ul>
-
-            <ul>
-              <li>
-                <p>K. Damevski, D. Shepherd, L. Pollock.
-                  &quot; <b>Scaling up Evaluation of Code Search Tools through Developer Usage Metrics</b> &quot;
-                  22nd IEEE International Conference on Software Analysis, Evolution, and Reengineering (SANER 2015).
-                  (<i>Acceptance Rate = 27%</i>)
-                  <a type="button" class="btn btn-xs btn-primary" href="files/cst-eval-metrics.pdf">Preprint</a>
-                  <a type="button" class="btn btn-xs btn-primary" href="http://dx.doi.org/10.1109/SANER.2015.7081828">DOI</a>
-                </p>
-              </li>
-            </ul>
-
-            <ul>
-              <li>
-                <div class="well well-sm">
-                  <p>K. Damevski, D. Shepherd, L. Pollock.
-                    &quot; <b>A Field Study of How Developers Locate Features in Source Code</b> &quot;
-                    Journal of Empirical Software Engineering. pp.1-24.
-                    <b class="text-danger"><i>Journal First @ ICSE'16</i></b>
-                    <a type="button" class="btn btn-xs btn-primary" href="files/cst-field-study.pdf">Preprint</a>
-                    <a type="button" class="btn btn-xs btn-primary" href="http://dx.doi.org/10.1007/s10664-015-9373-9">DOI</a>
-                    <a type="button" class="btn btn-xs btn-primary" href="files/icse-2016-field-study.pdf">Slides</a>
-                  </p>
-                </div>
-              </li>
-            </ul>
-
-            <ul>
-              <li>
-                <p>J. Wang, K. Damevski, H. Chen.
-                  &quot; <b>Sensor Data Modeling and Validating for Wireless Soil Sensor Network
-                  </b> &quot; Journal of Computers and Electronics in Agriculture.
-                  vol.112, pp.75-82.
-                  <a type="button" class="btn btn-xs btn-primary" href="http://dx.doi.org/10.1016/j.compag.2014.12.016">DOI</a>
-                </p>
-              </li>
-            </ul>
-
-
-            <li><b>2014</b></li>
-
-            <ul>
-
-              <li>
-                <div class="well well-sm">
-                  <p>X. Ge, D. Shepherd, K. Damevski,
-                    E. Murphy-Hill. &quot; <b>How Developers Use
-                      Multi-Recommendation System in Local Code Search</b> &quot;
-                      Proceedings of the IEEE Symposium on Visual Languages and
-                      Human-Centric Computing (VL/HCC 2014), Melbourne,
-                      Australia. (<i>Acceptance Rate = 30%</i>). <b>Best Long
-                        Paper Award</b>
-                        <a type="button" class="btn btn-xs btn-primary" href="http://dx.doi.org/10.1109/VLHCC.2014.6883025">DOI</a>
-                      </p>
-                    </div>
-                  </li>
-                </ul>
-
-                <ul>
-                  <li>
-                    <p> H. Chen, K. Damevski. &quot; <b> A Teaching Model for
-                      Development of Sensor-Driven Mobile Applications </b>
-                      &quot; Proceedings of the ACM Conference on Innovation
-                      and Technology in Computer Science Education (ITiCSE
-                      2014), Uppsala, Sweden, 2014. (<i>Acceptance Rate = 35%</i>)
-                      <a type="button" class="btn btn-xs btn-primary" href="http://dx.doi.org/10.1145/2591708.2591719">DOI</a>
-                    </p>
-                  </li>
-                </ul>
-
-                <ul>
-                  <li>
-                    <p> W. Snipes, E. Murphy-Hill, T. Fritz, M. Vakilian,
-                      K. Damevski, A. Nair, D. Shepherd. &quot; <b> A Practical
-                        Guide to Analyzing IDE Usage Data.</b> &quot;. The Art and
-                        Science of Analyzing Software Data. <i>Book Chapter</i>
-                        <a type="button" class="btn btn-xs btn-primary" href="http://store.elsevier.com/The-Art-and-Science-of-Analyzing-Software-Data/Christian-Bird/isbn-9780124115194/">Elsevier</a>
-                      </p>
-                    </li>
-                  </ul>
-
-                  <ul>
-                    <li>
-                      <p> K. Damevski, D. Shepherd, L. Pollock. &quot; <b> A Case
-                        Study of Paired Interleaving for Evaluating Code Search Techniques
-                      </b> &quot;, IEEE Conference on Software Maintenance and
-                      Reengineering - Working Conference on Reverse Engineering
-                      (CSMR-WCRE). 2014. (<i>Acceptance Rate = 31%</i>)
-                      <a type="button" class="btn btn-xs btn-primary" href="http://dx.doi.org/10.1109/CSMR-WCRE.2014.6747225">DOI</a>
-                    </p>
-                  </li>
-                </ul>
-
-                <ul>
-                  <li>
-                    <p> X. Ge, D. Shepherd,
-                      K. Damevski. E. Murphy-Hill. &quot <b> How the Sando
-                        Search Tool Recommends Queries</b> &quot, IEEE Conference
-                        on Software Maintenance and Reengineering - Working
-                        Conference on Reverse Engineering (CSMR-WCRE), Tool
-                        Track. 2014. (<i>Acceptance Rate = 50%</i>)
-                        <a type="button" class="btn btn-xs btn-primary" href="http://dx.doi.org/10.1109/CSMR-WCRE.2014.6747210">DOI</a>
-                      </p>
-                    </li>
-                  </ul>
-
-                  <li><b>2013</b></li>
-
-                  <ul>
-                    <li>
-                      <p> B. Altayeb, K. Damevski. &quot; <b>Utilizing and
-                        Enhancing Software Modeling Environments to Teach Mobile
-                        Application Design </b>, &quot; Journal of Computing
-                        Education in Colleges, volume 28, issue 6, pp: 57-64. 2013.
-                        (<i>Acceptance Rate = 50%</i>)
-                        <a type="button" class="btn btn-xs btn-primary" href="http://dl.acm.org/citation.cfm?id=2460168">ACM</a>
-                      </p>
-                    </li>
-                  </ul>
-
-                  <ul>
-                    <li>
-                      <p> H. Chen, K. Damevski, W. Edwards. &quot; <b>Infusing
-                        Cyber-Physical Systems Concepts into Introductory
-                        Computer Science Courses</b>, &quot; Journal of Computing
-                        Education in Colleges, volume 28, issue 6, pp: 26-34. 2013.
-                        (<i>Acceptance Rate = 50%</i>)
-                        <a type="button" class="btn btn-xs btn-primary" href="http://dl.acm.org/citation.cfm?id=2460164">ACM</a>
-                      </p>
-                    </li>
-                  </ul>
-
-                  <ul>
-                    <li>
-                      <p>K. Damevski, B. Altayeb, H. Chen, D. Walter. &quot; <b>
-                        Teaching Cyber-Physical Systems to Computer Scientists via
-                        Modeling and Verification</b> &quot;. Proceeding of 44th
-                        Annual SIGCSE Technical Symposium on Computer Science
-                        Education, Denver, CO, 2013. (<i>Acceptance Rate = 37.8%</i>)
-                        <a type="button" class="btn btn-xs btn-primary" href="http://dl.acm.org/citation.cfm?id=2445365">ACM</a>
-                      </p>
-                    </li>
-                  </ul>
-
-                  <li><b>2012</b></li>
-
-
-                  <ul>
-                    <li>
-                      <p>K. Damevski, M. Muralimanohar. &quot; <b>Interactive Refactoring for
-                        GPU Parallelization of Affine Loops</b> &quot;. Technical Report.
-                        <a type="button" class="btn btn-xs btn-primary" href="files/ek-tr.pdf">Preprint</a>
-                      </p>
-                    </li>
-                  </ul>
-
-
-                  <ul>
-                    <li>
-                      <p>K. Damevski, D. Shepherd, L. Pollock. &quot; <b>An Implicit
-                        Feedback-based Approach to the Evaluation of Text Analysis Techniques
-                        for Software Engineering</b> &quot;. Proceedings of the 1st International
-                        Workshop on on the Next Five Years of Text Analysis in Software Maintenance
-                        (TAinSM 2012), Riva de Garda, Italy, 2012.
-                        <a type="button" class="btn btn-xs btn-primary" href="files/interleaving.pdf">Preprint</a>
-                      </p>
-                    </li>
-                  </ul>
-
-                  <ul>
-                    <li>
-                      <div class="well well-sm">
-                        <p>D. Shepherd, K. Damevski, B. Ropski,
-                          T. Fritz. &quot; <b>Sando: An Extensible Local Code Search
-                            Framework</b> &quot;. Proceedings of the 20th
-                            International Symposium on the Foundations of Software
-                            Engineering (FSE 2012) -- Tools Track, Raleigh, North Carolina, 2012.
-                            <a type="button" class="btn btn-xs btn-primary" href="http://dl.acm.org/citation.cfm?id=2393612">ACM</a>
-                          </p>
-                        </div>
-                      </li>
-
-                    </ul>
-
-                    <ul>
-                      <li>
-                        <p>Kostadin Damevski. &quot; <b>Tool Support for Efficient
-                          Programming of Graphics Processing Units.</b> &quot;
-                          Bridging Mathematics, Statistics, Engineering and
-                          Technology. Edited by Bourama Toni, Keith Williamson,
-                          Nasser Ghariban, Dawit Haile, and Zhifu Xie.
-                          Springer Proceedings in Mathematics and Statistics 24.
-                          <i>Book Chapter</i>
-                          <a type="button" class="btn btn-xs btn-primary" href="http://link.springer.com/book/10.1007/978-1-4614-4559-3/page/1">Springer</a>
-                        </p>
-                      </li>
-                    </ul>
-
-                    <li><b>2011</b></li>
-
-                    <ul>
-                      <li>
-                        <p>J. Wang, K. Damevski, H. Chen. &quot; <b>Model Refinement
-                          and Data Filtering in High-Tunnel Greenhouse Sensor Network</b> &quot;
-                          Proceedings of 7th ACM International Symposium on QoS and Security for
-                          Wireless and Mobile Networks (Q2SWINET 2011), Miami Beach, Florida, 2011.
-                          <a type="button" class="btn btn-xs btn-primary" href="http://dl.acm.org/citation.cfm?id=2069113">ACM</a>
-                        </p>
-                      </li>
-                    </ul>
-                    <ul>
-                      <li>
-                        <p> K. Damevski, M. Muralimanohar. &quot; <b>A Refactoring Tool
-                          to Extract GPU Kernels</b> &quot;. Proceedings of the 2011 Workshop
-                          on Refactoring Tools (WRT 2011), in conjuction with the International
-                          Conference on Software Engineering (ICSE 2011), Honolulu, Hawaii, 2011.
-                          <a type="button" class="btn btn-xs btn-primary" href="http://dl.acm.org/citation.cfm?id=1984732.1984739">ACM</a>
-                        </p>
-                      </li>
-                    </ul>
-
-                    <ul>
-                      <li>
-                        <p> K. Damevski, T. Dahlgren. &quot; <b>Parallel Object
-                          Contracts for High Performance Computing</b>
-                          &quot;. Proceedings of the 2011 Workshop on High-Level
-                          Programming Models and Supportive Environments (HIPS 2011), in
-                          conjuction with the IEEE International Parallel and
-                          Distributed Processing Symposium (IPDPS 2011), Anchorage,
-                          Alaska, 2011.
-                          <a type="button" class="btn btn-xs btn-primary" href="http://dx.doi.org/10.1109/IPDPS.2011.263">DOI</a>
-                        </p>
-                      </li>
-                    </ul>
-
-                    <ul>
-                      <li>
-                        <p>J. Wang, H. Chen, K. Damevski, J. Liu,
-                          &quot; <b>Mobility-tolerant, Efficient Multicast in Mobile
-                            Cloud Applications</b>&quot;. Proceedings of the 4th
-                            International ICST Conference on Mobile Wireless Middleware,
-                            Operating Systems, and Applications (MOBILWARE 2011), London,
-                            UK, 2011.
-                            <a type="button" class="btn btn-xs btn-primary" href="http://www.springerlink.com/content/u28753t582746315/">Springer</a>
-                          </p>
-                        </li>
-                      </ul>
-
-                      <li><b>2010</b></li>
-
-                      <ul>
-                        <li>
-                          <p> K. Damevski. &quot; <b>Offline Contract Enforcement for
-                            High Performance Computing</b> &quot;. Concurrency and
-                            Computation: Practice and Experience, <i>vol. 23, issue
-                              13, pp: 1465-1473</i>, 2010.
-                              <a type="button" class="btn
-                              btn-xs btn-primary" href="http://onlinelibrary.wiley.com/doi/10.1002/cpe.1702/abstract">Wiley</a>
-                            </p>
-                          </li>
-                        </ul>
-
-                        <li><b>2009</b></li>
-
-                        <ul>
-                          <li>
-                            <p>K. Damevski. &quot;
-                              <b>Expressing Measurement Units in Interfaces for Scientific
-                                Component Software</b> &quot;. In Proceedings of the 2009
-                                Workshop on Component-Based High Performance Computing,
-                                (in conjuction with the 22nd Supercomputing Conference (SC09)),
-                                Portland, Oregon, 2009.
-                                <a type="button" class="btn btn-xs btn-primary" href="files/dims.pdf">Preprint</a>
-                              </p>
-                            </li>
-                          </ul>
-
-                          <ul>
-                            <li>
-                              <p> K. Damevski, H. Chen, T. Dahlgren. &quot;
-                                <b>Reducing Component Contract Overhead by Offloading
-                                  Enforcement</b> &quot;. Proceedings of the 2009 Workshop on
-                                  Component-Based High Performance Computing, (in conjuction with
-                                  the 22nd Supercomputing Conference (SC09)), Portland,
-                                  Oregon, 2009. <a type="button" class="btn btn-xs btn-primary" href="files/contracts.pdf">Preprint</a>
-                                </p>
-                              </li>
-                            </ul>
-
-                            <ul>
-                              <li>
-                                <p>K. Damevski, H.Chen. &quot;
-                                  <b>Automated Provenance Collection for CCA Component
-                                    Assemblies</b> &quot;. In Proceedings of the 9th International
-                                    Conference on Computational Science (ICCS 2009), Baton Rouge,
-                                    Louisiana, 2009. <a type="button" class="btn btn-xs btn-primary" href="files/ccaprov.pdf">Preprint</a>
-                                  </p>
-                                </li>
-                              </ul>
-
-                              <ul>
-                                <li>
-                                  <div class="well well-sm">
-                                    <p>S. Yau, K. Damevski, V. Karamchety, S. Parker, D. Zorin. &quot;
-                                      <b>Application Aware Management of Parallel Simulation
-                                        Collection</b> &quot;. In Proceedings of the 14th ACM
-                                        SIGPLAN Symposium on Principles and Practice of Parallel
-                                        Programming (PPOPP 2009), Raleigh, North Carolina, 2009.
-                                        <a type="button" class="btn btn-xs btn-primary" href="http://dl.acm.org/citation.cfm?id=1504184">ACM</a>
-                                      </p>
-                                    </div>
-                                  </li>
-                                </ul>
-
-                                <li><b>2008</b></li>
-
-                                <ul>
-                                  <li>
-                                    <p>K. Damevski, A. Khan, S. Parker. &quot; <b>Scientific
-                                      Workflows and Components: Together at Last!</b>&quot;. In
-                                      Proceedings of the 3rd Workshop on Component-Based
-                                      High-Performance Computing (CBHPC 2008), Karlsruhe, Germany,
-                                      2008. <a type="button" class="btn btn-xs btn-primary" href="files/keplercca.pdf">Preprint</a>
-                                    </p>
-                                  </li>
-                                </ul>
-
-                                <ul>
-                                  <li>
-                                    <div class="well well-sm">
-                                      <p>S. Yau, K. Damevski, D. Zorin, V. Karamcheti, S. Parker. &quot;
-                                        <b>Result Reuse in Design Space Exploration: A Study in
-                                          System Support for Interactive Parallel
-                                          Computing</b>&quot;.  In Proceedings of the 22
-                                          International Parallel and Distributed Processing
-                                          Symposium (IPDPS 2008), Miami, Florida, 2008.
-                                          <a type="button" class="btn btn-xs btn-primary"
-                                          href="http://dx.doi.org/10.1109/IPDPS.2008.4536324">DOI</a>
-                                        </p>
-                                      </div>
-                                    </li>
-                                  </ul>
-
-                                  <ul>
-                                    <li>
-                                      <p>K. Damevski, K. Zhang, S. Parker &quot;<b>Practical
-                                        Parallel Remote Method Invocation for the Babel
-                                        Compiler</b>&quot;.  In Proceedings of the
-                                        HPC-GECO/CompFrame'07 Workshop, Montreal, Canada, 2008.
-                                        <a type="button" class="btn btn-xs btn-primary" href="files/babel-mxn.pdf">Preprint</a>
-                                      </p></li>
-                                    </ul>
-
-                                    <li><b>2007</b></li>
-
-                                    <ul>
-                                      <li>
-                                        <p>K.Damevski, A. Swaminathan, S. Parker.  &quot;<b>Highly
-                                          Scalable Distributed Component Framework for Scientific
-                                          Computing</b>&quot;.  In Proceedings of the 3rd
-                                          International Conference on High Performance Computing and
-                                          Communication (HPCC 2007), Houston, Texas,
-                                          2007. <a type="button" class="btn btn-xs btn-primary" href="files/ccaloop.pdf">Preprint</a>
-                                        </p></li>
-                                      </ul>
-
-                                      <ul>
-                                        <li>
-                                          <p>K.Damevski, A. Swaminathan, S. Parker.  &quot;<b>CCALoop:
-                                            Scalable Design of a Distributed Component
-                                            Framework</b>&quot;.  In Proceedings of the 16th
-                                            International High Performance Distributed Computing
-                                            Symposium (HPDC 2007), Monterey, California,
-                                            2007. <i>(Poster/Short Paper)</i>
-                                            <a type="button" class="btn btn-xs btn-primary" href="files/ccaloop-poster.pdf">Preprint</a>
-                                          </p></li>
-                                        </ul>
-
-                                        <li><b>2006</b></li>
-
-                                        <ul>
-                                          <li>
-                                            <p>F. Bertrand, R. Bramley, D. Bernholdt, J. Kohl,
-                                              J. Larson, A. Sussman and K. Damevski. &quot;<b>Data
-                                                Redistribution and Remote Method Invocation for Coupled
-                                                Components</b>&quot;.  Journal of Parallel and Distributed
-                                                Computing, Volume 66, Issue 7, 2006.</p>
-                                              </li>
-                                            </ul>
-
-                                            <ul>
-                                              <li>
-                                                <p>Kostadin Damevski. &quot;<b>Component Model
-                                                  Interoperability for Scientific
-                                                  Computing</b>&quot;.&nbsp; PhD Thesis.  University of
-                                                  Utah, Dec, 2006.
-                                                  <a type="button" class="btn btn-xs btn-primary" href="files/phdthesis.pdf">Preprint</a>
-                                                </p>
-                                              </li>
-                                            </ul>
-
-                                            <ul>
-                                              <li>
-                                                <p>David E. Bernholdt, Benjamin A.  Allan, Robert Armstrong,
-                                                  Felipe Bertrand, Kenneth Chiu, Tamara L.  Dahlgren,
-                                                  Kostadin Damevski, Wael R. Elwasif, Thomas G. W. Epperly,
-                                                  Madhusudhan Govindaraju, Daniel S. Katz, James A. Kohl,
-                                                  Manoj Krishnan, Gary Kumfert, J. Walter Larson, Sophia
-                                                  Lefantzi, Michael J. Lewis, Allen D. Malony, Lois
-                                                  C. McInnes, Jarek Nieplocha, Boyana Norris, Steven G.
-                                                  Parker, Jaideep Ray, Sameer Shende, Therisa L. Windus, and
-                                                  Shujia Zhou, <b> &quot;A Component Architecture for High
-                                                    Performance Scientific Computing&quot;</b> International
-                                                    Journal on High-Performance Computing Applications (2006)
-                                                    ACTS Collection special issue.</p></li>
-                                                  </ul>
-
-                                                  <li><b>2005</b></li>
-
-                                                  <ul>
-                                                    <li>
-                                                      <p>Kostadin Damevski and Steven Parker. &quot;<b>M-by-N Data
-                                                        Redistribution through Parallel Remote Method
-                                                        Invocation</b>&quot;.  International Journal of High
-                                                        Performance Computing Applications 2005 19: 389-398.
-                                                        <a type="button" class="btn btn-xs btn-primary" href="http://dx.doi.org/10.1177/1094342005056136">DOI</a>
-                                                      </p></li>
-                                                    </ul>
-
-                                                    <ul>
-                                                      <li>
-                                                        <div class="well well-sm">
-                                                          <p>F. Bertrand, R. Bramley, D. Bernholdt, J. Kohl,
-                                                            J. Larson, A. Sussman and K.Damevski.  &quot;<b>Data
-                                                              Redistribution and Remote Method Invocation in Parallel
-                                                              Component Architectures</b>&quot;.  In Proceedings of the
-                                                              19th International Parallel and Distributed Processing
-                                                              Symposium (IPDPS 2005) <b>(Best Paper Award)</b>
-                                                              <a type="button" class="btn btn-xs btn-primary" href="http://dl.acm.org/citation.cfm?id=1054380">ACM</a>
-                                                            </p>
-                                                          </div>
-                                                        </li>
-                                                      </ul>
-
-                                                      <ul>
-                                                        <li>
-                                                          <p>Kostadin Damevski.  &quot;<b>Generating Bridges Between
-                                                            Heterogeneous Component Models</b>&quot;.  In Proceedings
-                                                            of the 7th Generative Programming and Component
-                                                            Engineering (GPCE) Young Researchers Workshop
-                                                            (2005). Edited by Matthew J. Rutherford. (ISBN
-                                                            9985-894-89-8).
-                                                            <a type="button" class="btn btn-xs btn-primary" href="files/gpce-yrw-05.pdf">Preprint</a></p></li>
-                                                          </ul>
-
-                                                          <li><b>2004</b></li>
-
-                                                          <ul>
-                                                            <li>
-                                                              <p>Kostadin Damevski and Steven Parker. &quot;<b>Imprecise
-                                                                Exceptions in Distributed Parallel Components</b>&quot;.
-                                                                In Proceedings of the 9th European Conference on Parallel
-                                                                Computing (EURO-PAR
-                                                                2004). <a type="button" class="btn btn-xs btn-primary" href="files/ImpreciseX.pdf">Preprint</a></p></li>
-                                                              </ul>
-
-                                                              <ul>
-                                                                <li>
-                                                                  <p>Keming Zhang, Kostadin Damevski, Venkatanand
-                                                                    Venkatachalapathy and Steven G. Parker. &quot;<b>SCIRun2:
-                                                                      A CCA Framework for High Performance Computing</b>&quot;,
-                                                                      9th International Workshop on High-Level Parallel
-                                                                      Programming Models and Supportive Environments
-                                                                      <a type="button" class="btn btn-xs btn-primary" href="files/hips2004-SR2.pdf">Preprint</a></p>
-                                                                    </li>
-                                                                  </ul>
-
-                                                                  <li><b>2003</b></li>
-
-                                                                  <ul>
-                                                                    <li><p> Kostadin Damevski and Steven Parker. &quot;<b>Parallel
-                                                                      Remote Method Invocation and M-by-N Data
-                                                                      Redistribution</b>&quot;. In Proceedings of the Fourth Los
-                                                                      Alamos Computer Science Institute Symposium. October,
-                                                                      2003. <a type="button" class="btn btn-xs btn-primary" href="files/MxNPaperR.pdf">Preprint</a>
-                                                                    </li>
-                                                                  </ul>
-
-                                                                  <ul>
-                                                                    <li><p>Kostadin Damevski. &quot;<b>Parallel Component
-                                                                      Interaction with an Interface Definition Language
-                                                                      Compiler</b>&quot;.&nbsp; Master's Thesis. University of
-                                                                      Utah, May, 2003.
-                                                                      <a type="button" class="btn btn-xs btn-primary" href="files/thesis.pdf">Preprint</a></li>
-                                                                    </ul>
-
-
-                                                                  </ul>
-
-                                                                </div>
-
-                                                                <div class="modal fade" id="contactModal" role="dialog">
-                                                                  <div class="modal-dialog modal-lg">
-                                                                    <div class="modal-content">
-                                                                      <div class="modal-header">
-                                                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                                        <h4 class="modal-title">Contact Information</h4>
-                                                                      </div>
-                                                                      <div class="modal-body">
-                                                                        <p><b>Office:</b>Engineering East Hall, Room 4253</p>
-                                                                        <p><b>Mailing Address:</b>
-                                                                          Kostadin Damevski;
-                                                                          P.O. Box 843019;
-                                                                          Department of Computer Science;
-                                                                          Richmond, VA 23284;
-                                                                          USA
-                                                                          <p><b>Telephone:</b> (804)827-3607</p>
-                                                                          <p><b>E-mail:</b> damevski (at) acm.org</p>
-                                                                        </div>
-                                                                        <div class="modal-footer">
-                                                                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                                                        </div>
-                                                                      </div>
-                                                                    </div>
-                                                                  </div>
-
-
-
-
-
-                                                                  <!-- Bootstrap core JavaScript
-                                                                  ================================================== -->
-                                                                  <!-- Placed at the end of the document so the pages load faster -->
-                                                                  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-                                                                  <script src="bootstrap/js/bootstrap.min.js"></script>
-                                                                  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-                                                                  <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-
-                                                                  <script>
-                                                                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                                                                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                                                                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-                                                                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-                                                                  ga('create', 'UA-1250424-1', 'auto');
-                                                                  ga('send', 'pageview');
-                                                                  </script>
-
-                                                                </body>
-                                                                </html>
+      </div>
+    </div>
+  </div> <!-- /container -->
+
+
+  <div class="row">&nbsp;</div>
+
+  <div class="container" id="projects">
+    <h3>Research Projects</h3>
+    <ul>
+      <li><b>Emotions in Software Engineering Text</b> -- Detecting emotions expressed in software engineering communication channels (e.g., comments on pull requests, issue discussions, chats) in order to reduce toxic or incivil comments, undestand developer's emotion towards a specific aspect or feature or of the project, etc. Contribute to a more sustainable open source software eco-system. [<a href="files/Emotion_Classification_ASE_2022.pdf">ASE 2022</a>]</li>
+      <li><b>Changeset-based Bug Localization</b> -- Helping developers to localize bugs (using bug reports) to the changeset that induced them. Changesets (or diffs) can be more useful for fixing bugs than static source code (e.g., methods or classes) as they encode the change that created the bug and include a (usually) meaningful message. [<a href="https://arxiv.org/abs/2112.14169">ICSE 2022</a>]</li>
+      <li><b>Conversational Interfaces for Software Development</b> -- Use conversational interfaces for 1) end-users to program cyber-physical systems (e.g., UAVs); 2) novices to find software development information on the Web; 3) developers to improve the quality of bug reporting [<a href="files/web_cq_IST_2022.pdf">Elsevier IST 2022</a>]</li>
+      <li><b>Improved Software Vulnerability Data</b> -- Patches to known software vulnerabilities, as maintained by the National Vulnerability Dataset are often noisy or incorrect. Our work aims to understand and improve the quality of this important data source. It also aims to create a corpus of explained patches that can be leveraged in education. </li>
+    </ul>
+  </div>
+
+  <div class="row">&nbsp;</div>
+
+  <div class="container" id="publications">
+    <h3>Publications</h3>
+
+    <ul>
+
+      <li><b>2023</b></li>
+
+      <ul>
+        <li>
+          <p>A. Sajadi, K. Damevski, P. Chaterjee. &quot; <b> Interpersonal trust in OSS: Exploring dimensions of trust in GitHub pull requests</b> &quot;. Proceedings of the 45th International Conference on Software Engineering (ICSE 2023), NIER Track, Melbourne, Australia.
+            <a type="button" class="btn btn-xs btn-primary" href="https://preethac.github.io/files/ICSE_NIER_2023.pdf">Preprint</a>
+
+          </p>
+        </li>
+      </ul>
+
+      <li><b>2022</b></li>
+
+      <ul>
+        <li>
+          <p>Y. Zhao, K. Damevski, H. Chen. &quot; <b>A Systematic Survey of Just-In-Time Software Defect Prediction</b>
+            &quot;. ACM Computing Surveys. 2022.
+            <a type="button" class="btn btn-xs btn-primary" href="files/report_CSUR_2022.pdf">Preprint</a>
+          </p>
+        </li>
+      </ul>
+
+
+      <ul>
+        <li>
+            <p class="text-primary">M.M. Imran, Y. Jain, P. Chatterjee, K. Damevski. &quot; <b>Data Augmentation for Improving Emotion
+                Recognition in Software Engineering Communication</b> &quot;. Proceedings of the 37th IEEE/ACM
+              International Conference on Automated Software Engineering (ASE 2022), Technical Track, Ann Arbor, MI.
+              <a type="button" class="btn btn-xs btn-primary"
+                href="files/Emotion_Classification_ASE_2022.pdf">Preprint</a>
+            </p>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <p>M. M. Imran, K. Damevski. &quot; <b>Using Clarification Questions to Improve Software Developers’ Web
+              Search</b> &quot;. Information and Software Technology. 2022.
+            <a type="button" class="btn btn-xs btn-primary" href="files/web_cq_IST_2022.pdf">Preprint</a>
+          </p>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+            <p class="text-primary">A. Ciborowska, K. Damevski. &quot; <b>Fast Changeset-based Bug Localization Using BERT</b> &quot;.
+              Proceedings of the 44th International Conference on Software Engineering (ICSE 2022), Technical Track,
+              Pittsburgh, PA.
+              <a type="button" class="btn btn-xs btn-primary" href="https://arxiv.org/abs/2112.14169">Preprint</a>
+            </p>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <p>M. Frazier, S. Kumar, K. Damevski, L. Pollock. &quot; <b>Investigating User Perceptions of Conversational
+              Agents for Software-related Exploratory Web Search</b> &quot;. Proceedings of the 44th International
+            Conference on Software Engineering (ICSE 2022), NIER Track, Pittsburgh, PA.
+            <a type="button" class="btn btn-xs btn-primary" href="files/conv_agents_icse_nier_2022.pdf">Preprint</a>
+
+          </p>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <p>V. Sheth, K. Damevski. &quot; <b>Grouping Related Stack Overflow Comments for
+              Software Developer Recommendation</b> &quot;. Journal of Automated Software Engineering. 2022.
+            <a type="button" class="btn btn-xs btn-primary"
+              href="files/Grouping_Stack_Overflow_Comments_2022.pdf">Preprint</a>
+          </p>
+        </li>
+      </ul>
+
+
+      <li><b>2021</b></li>
+
+      <ul>
+        <li>
+          <p>M. M. Imran, A. Ciborowska, K. Damevski. &quot; <b>Automatically Selecting Follow-up Questions for
+              Deficient Bug Reports</b> &quot;. Proceedings of the 18th International Conference on Mining Software
+            Repositories (MSR’21), Technical Track, Madrid, Spain.
+            <a type="button" class="btn btn-xs btn-primary" href="files/bugautoq_msr21_preprint.pdf">Preprint</a>
+          </p>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+            <p class="text-primary">P. Chatterjee, K. Damevski, L. Pollock. &quot; <b>Automatic Extraction of Opinion-based Q&A from Online
+                Developer Chats </b> &quot;. Proceedings of the 43rd International Conference on Software Engineering
+              (ICSE 2021), Technical Track, Madrid, Spain.
+              <a type="button" class="btn btn-xs btn-primary" href="files/chaterjee_isce2021.pdf">Preprint</a>
+            </p>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <p>P. Chatterjee, K. Damevski, N. A. Kraft, and L. Pollock. &quot; <b>Automatically Identifying the Quality of
+              Developer Chats for Post Hoc Use</b> &quot;. ACM Transactions on Software Engineering and Methodology
+            (TOSEM). 2021.
+            <a type="button" class="btn btn-xs btn-primary" href="files/posthoc_tosem2021.pdf">Preprint</a>
+          </p>
+        </li>
+      </ul>
+
+      <li><b>2020</b></li>
+
+      <ul>
+        <li>
+          <div>
+            <p>A. Ciborowska, K. Damevski. &quot; <b>Recognizing Developer Activity Based on Joint Modeling of Code and
+                Command Interactions</b> &quot;. IEEE Access, 2020.
+              <a type="button" class="btn btn-xs btn-primary" href="files/devact_ieeeaccess2020.pdf">Preprint</a>
+              <!--                   <a type="button" class="btn btn-xs btn-primary" href="https://ieeexplore.ieee.org/abstract/document/9268948">Paper</a> -->
+            </p>
+          </div>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <div>
+            <p>P. Chatterjee, K. Damevski, N.A. Kraft, L. Pollock. &quot; <b>Software-related Slack Chats with
+                Disentangled Conversations</b> &quot;. In Proceedings of the 17th International Conference on Mining
+              Software Repositories (MSR’20) - Data Showcase Track, Seoul, South Korea, 2020.
+              <a type="button" class="btn btn-xs btn-primary" href="files/slackdata_msr_2020.pdf">Preprint</a>
+            </p>
+          </div>
+        </li>
+      </ul>
+
+      <li><b>2019</b></li>
+
+      <ul>
+        <li>
+          <div>
+            <p>M.A. Nishi, K. Damevski. &quot; <b>Automatically Identifying Valid API Versions for Software Development
+                Tutorials on the Web</b> &quot;. Journal of Software: Evolution and Process, 2019. <i>accepted</i>
+              <a type="button" class="btn btn-xs btn-primary" href="files/tutver_jsep2019_preprint.pdf">Preprint</a>
+            </p>
+          </div>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <div>
+            <p>H. Chen, K. Damevski, D. Shepherd, N. A. Kraft. &quot; <b>Modeling Hierarchical Usage Context for
+                Software Exceptions based on Interaction Data</b> &quot;. Journal of Automated Software Engineering,
+              2019.
+              <a type="button" class="btn btn-xs btn-primary" href="files/nhdp_jase19_preprint.pdf">Preprint</a>
+            </p>
+          </div>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+            <p class="text-primary">H. Chen, J. Coogle, K. Damevski. &quot; <b>Modeling Stack Overflow Tags and Topics as a Hierarchy of
+                Concepts</b> &quot;. Journal of Systems and Software, 2019.
+              <a type="button" class="btn btn-xs btn-primary" href="files/sotags_jss19_preprint.pdf">Preprint</a>
+            </p>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <div>
+            <p>H. Chen, A. Ciborowska, K. Damevski. &quot; <b>Using Automated Prompts for Student Reflection on Computer
+                Security Concepts</b> &quot;. In Proceedings of the 24th Annual Conference on Innovation and Technology
+              in Computer Science Education (ITiCSE’19), Aberdeen, UK, 2019.
+              <a type="button" class="btn btn-xs btn-primary" href="files/reflector_iticse19_preprint.pdf">Preprint</a>
+            </p>
+          </div>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <div>
+            <p>P. Chatterjee, K. Damevski, L. Pollock, V. Augustine, N.A. Kraft. &quot; <b>Exploratory Study of Slack
+                Q&A Chats as a Mining Source for Software Engineering Tools </b> &quot;. In Proceedings of the 16th
+              International Conference on Mining Software Repositories (MSR’19), Montreal, Canada, 2019.
+              <a type="button" class="btn btn-xs btn-primary" href="files/chatterjee-msr19-preprint.pdf">Preprint</a>
+            </p>
+          </div>
+        </li>
+      </ul>
+
+
+      <ul>
+        <li>
+          <div>
+            <p>M.A. Nishi, A. Ciborowska, K. Damevski. &quot; <b>Characterizing Duplicate Code Snippets between Stack
+                Overflow and Tutorials</b> &quot;. In Proceedings of the 16th International Conference on Mining
+              Software Repositories (MSR’19) - Mining Challenge, Montreal, Canada, 2019.
+              <a type="button" class="btn btn-xs btn-primary" href="files/nishi-msr19-preprint.pdf">Preprint</a>
+            </p>
+          </div>
+        </li>
+      </ul>
+
+
+
+      <li><b>2018</b></li>
+
+      <ul>
+        <li>
+            <p class="text-primary">C.S. Corley, K. Damevski, N. Kraft. &quot; <b>Changeset-Based Topic Modeling of Software Repositories</b>
+              &quot;. IEEE Transactions on Software Engineering, 2018.
+              <a type="button" class="btn btn-xs btn-primary"
+                href="files/corley_online_lda_2018_preprint.pdf">Preprint</a>
+              <a type="button" class="btn btn-xs btn-primary" href="https://doi.org/10.1109/TSE.2018.2874960">DOI</a>
+            </p>
+        </li>
+      </ul>
+
+
+      <ul>
+        <li>
+          <div>
+            <p>A. Ciborowska, N. Kraft, K. Damevski. &quot; <b>Detecting and Characterizing Developer Behavior Following
+                Opportunistic Reuse of Code Snippets from the Web</b> &quot;. In Proceedings of the 15th International
+              Conference on Mining Software Repositories (MSR’18), Gothenburg, Sweden, 2018.
+              <i>MSR'18 Mining Challenge Winner</i>
+              <a type="button" class="btn btn-xs btn-primary" href="files/ciborowska_msr18_preprint.pdf">Preprint</a>
+            </p>
+          </div>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <div>
+            <p>C. Greco, T. Haden, K. Damevski. &quot; <b>StackInTheFlow: Behavior-Driven Recommendation System for
+                Stack Overflow Posts</b> &quot;. In Proceedings of the International Conference on Software Engineering
+              (ICSE 2018) -- Tool Demo Track, Gothenburg, Sweden, 2018.
+              <a type="button" class="btn btn-xs btn-primary" href="files/greco_icse18_preprint.pdf">Preprint</a>
+            </p>
+          </div>
+        </li>
+      </ul>
+
+      <li><b>2017</b></li>
+
+      <ul>
+        <li>
+          <div>
+            <p>M.A. Nishi, K. Damevski. &quot; <b>Scalable Code Clone Detection and Search based on Adaptive Prefix
+                Filtering</b> &quot;. Journal of Systems and Software. vol.137, pp.130-142, 2017.
+              <a type="button" class="btn btn-xs btn-primary" href="files/nishi_scalable_2017_preprint.pdf">Preprint</a>
+              <a type="button" class="btn btn-xs btn-primary" href="https://doi.org/10.1016/j.jss.2017.11.039">DOI</a>
+            </p>
+          </div>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+            <p class="text-primary">K. Damevski, H. Chen, D.C. Shepherd, N.A. Kraft, L. Pollock. &quot; <b>Predicting Future Developer
+                Behavior in the IDE Using Topic Models</b> &quot;. IEEE Transactions on Software Engineering. 2017.
+              <i>Journal First @ ICSE'18</i>
+              <a type="button" class="btn btn-xs btn-primary" href="files/lda_for_interactions_2017.pdf">Preprint</a>
+              <a type="button" class="btn btn-xs btn-primary" href="https://doi.org/10.1109/TSE.2017.2748134">DOI</a>
+            </p>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <p>Z. Coker, K. Damevski, C. Le Goues, N. A. Kraft, D. Shepherd, L. Pollock. &quot;
+            <b>Behavior Metrics for Prioritizing Investigations of Exceptions</b> &quot;. In Proceedings of the IEEE
+            International Conference on Software Maintenance and Evolution (ICSME 2017) -- Industry Track, Shanghai,
+            China, 2017.
+            (<i>Acceptance Rate = 35%</i>)
+            <a type="button" class="btn btn-xs btn-primary" href="files/coker_behavior_2017_preprint.pdf">Preprint</a>
+            <a type="button" class="btn btn-xs btn-primary" href="https://doi.org/10.1109/ICSME.2017.62">DOI</a>
+          </p>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <p>J. Schneider, A. Bernstein, J. vom Brocke, K. Damevski, D. C. Shepherd. &quot; <b>Detecting Plagiarism
+              based on the Creation Process</b> &quot;. IEEE Transactions on Learning Technologies. 2017.
+            <a type="button" class="btn btn-xs btn-primary" href="http://dx.doi.org/10.1109/TLT.2017.2720171">DOI</a>
+          </p>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <p>S.M. Naim, K. Damevski, M.S. Hossain. &quot; <b>Reconstructing and Evolving Software Architectures Using a
+              Coordinated Clustering Framework</b> &quot;. Journal of Automated Software Engineering. 2017.
+
+            <a type="button" class="btn btn-xs btn-primary" href="http://dx.doi.org/10.1007/s10515-017-0211-8">DOI</a>
+            <a type="button" class="btn btn-xs btn-primary" href="http://vcu-swim-lab.github.io/cchd">Data</a>
+          </p>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <p>P. Chatterjee, M.A. Nishi, K. Damevski, V. Augustine, L. Pollock, N. Kraft. &quot; <b>What Information
+              about Code Snippets Is Available in Different Software-Related Documents? An Exploratory Study</b> &quot;.
+            In Proceedings of the 24th IEEE International Conference on Software Analysis, Evolution, and Reengineering
+            (SANER 2017) -- Early Research Achievements (ERA) Track, Klagenfurt, Austria. (<i>Acceptance Rate =
+              32.5%</i>)
+            <a type="button" class="btn btn-xs btn-primary" href="files/chatterjee-saner17.pdf">Preprint</a>
+            <a type="button" class="btn btn-xs btn-primary" href="https://doi.org/10.1109/SANER.2017.7884638">DOI</a>
+          </p>
+        </li>
+      </ul>
+
+      <li><b>2016</b></li>
+
+      <ul>
+        <li>
+            <p class="text-primary">K. Damevski, D. Shepherd, J. Schneider, L. Pollock. &quot; <b>Mining Sequences of Developer Interactions
+                in Visual Studio for Usage Smells</b> &quot;. IEEE Transactions on Software Engineering. 2016.
+              <i>Journal First @ ICSE'17</i>
+              <a type="button" class="btn btn-xs btn-primary" href="files/blaze_pattern_mining.pdf">Preprint</a>
+              <a type="button" class="btn btn-xs btn-primary" href="http://dx.doi.org/10.1109/TSE.2016.2592905">DOI</a>
+              <a type="button" class="btn btn-xs btn-primary"
+                href="https://abb-iss.github.io/DeveloperInteractionLogs/">Data</a>
+            </p>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <p>X. Ge, D. Shepherd, K. Damevski, E. Murphy-Hill. &quot; <b>Design and Evaluation of a Multi-Recommendation
+              System for Local Code Search</b> &quot;. Journal of Visual Languages and Computing. 2016.
+            <a type="button" class="btn btn-xs btn-primary" href="files/sando-rec.pdf">Preprint</a>
+            <a type="button" class="btn btn-xs btn-primary" href="http://dx.doi.org/10.1016/j.jvlc.2016.07.002">DOI</a>
+          </p>
+        </li>
+      </ul>
+
+
+      <ul>
+        <li>
+          <p>J-S. Lee, K. Damevski, H. Chen. &quot; <b>Exploring Computer Science Students’
+              Learning of Sensor-Driven Mobile App Design: A Case Study</b> &quot;. International Journal of Teaching
+            and Case Studies. 2016.
+            <a type="button" class="btn btn-xs btn-primary" href="files/lee2016exploring.pdf">Preprint</a>
+          </p>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <p>K. Damevski, H. Chen, D. Shepherd, L. Pollock. &quot; <b>Interactive Exploration of Developer Interaction
+              Traces using a Hidden Markov Model</b> &quot;. In Proceedings of the 13th International Conference on
+            Mining Software Repositories (MSR’16), Austin, TX, May 14-15, 2016, 10 pages
+            (<i>Acceptance Rate = 27%</i>)
+            <a type="button" class="btn btn-xs btn-primary" href="files/damevski_msr_16.pdf">Preprint</a>
+            <a type="button" class="btn btn-xs btn-primary" href="files/msr-2016-slides.pdf">Slides</a>
+          </p>
+        </li>
+      </ul>
+
+      <li><b>2015</b></li>
+
+      <ul>
+        <li>
+          <p>K. Damevski, D. Shepherd, N. Kraft, L. Pollock. &quot; <b>Supporting Developers in Porting Software via
+              Combined Textual and Structural Analysis of Software Artifacts</b> &quot;. Computational Science &
+            Engineering Software Sustainability and Productivity Challenges (CSESSP Challenges) - Position Paper.
+            <a type="button" class="btn btn-xs btn-primary" href="files/csessp_2015.pdf">Preprint</a>
+            <a type="button" class="btn btn-xs btn-primary" href="files/poster_csessp.pdf">Poster</a>
+          </p>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <p>C. Corley, K. Damevski, N. Kraft. &quot; <b>Exploring the Use of Deep Learning for Feature Location </b>
+            &quot;. Proceedings of the International Conference on Software Maintenance and Evolution (ICSME 2015) –
+            Early Research Achievements (ERA) Track, Bremen, Germany.
+            (<i>Acceptance Rate = 35%</i>)
+            <a type="button" class="btn btn-xs btn-primary" href="files/Corley-etal_2015a.pdf">Preprint</a>
+          </p>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <p>D. Shepherd, K. Damevski, L. Pollock. &quot; <b>How and When to Transfer Software Engineering Research
+              via Extensions</b> &quot;. Proceedings of the International Conference on Software Engineering (ICSE 2015)
+            –
+            Software Engineering in Practice (SEIP) Track, Florence, Italy.
+            (<i>Short Paper Acceptance Rate = 50%</i>)
+            <a type="button" class="btn btn-xs btn-primary" href="files/Shepherd_SEIP_2015.pdf">Preprint</a>
+          </p>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <p>K. Damevski, D. Shepherd, L. Pollock.
+            &quot; <b>Scaling up Evaluation of Code Search Tools through Developer Usage Metrics</b> &quot;
+            22nd IEEE International Conference on Software Analysis, Evolution, and Reengineering (SANER 2015).
+            (<i>Acceptance Rate = 27%</i>)
+            <a type="button" class="btn btn-xs btn-primary" href="files/cst-eval-metrics.pdf">Preprint</a>
+            <a type="button" class="btn btn-xs btn-primary" href="http://dx.doi.org/10.1109/SANER.2015.7081828">DOI</a>
+          </p>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+            <p class="text-primary">K. Damevski, D. Shepherd, L. Pollock.
+              &quot; <b>A Field Study of How Developers Locate Features in Source Code</b> &quot;
+              Journal of Empirical Software Engineering. pp.1-24.
+              <i>Journal First @ ICSE'16</i>
+              <a type="button" class="btn btn-xs btn-primary" href="files/cst-field-study.pdf">Preprint</a>
+              <a type="button" class="btn btn-xs btn-primary" href="http://dx.doi.org/10.1007/s10664-015-9373-9">DOI</a>
+              <a type="button" class="btn btn-xs btn-primary" href="files/icse-2016-field-study.pdf">Slides</a>
+            </p>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <p>J. Wang, K. Damevski, H. Chen.
+            &quot; <b>Sensor Data Modeling and Validating for Wireless Soil Sensor Network
+            </b> &quot; Journal of Computers and Electronics in Agriculture.
+            vol.112, pp.75-82.
+            <a type="button" class="btn btn-xs btn-primary"
+              href="http://dx.doi.org/10.1016/j.compag.2014.12.016">DOI</a>
+          </p>
+        </li>
+      </ul>
+
+
+      <li><b>2014</b></li>
+
+      <ul>
+
+        <li>
+            <p class="text-primary">X. Ge, D. Shepherd, K. Damevski,
+              E. Murphy-Hill. &quot; <b>How Developers Use
+                Multi-Recommendation System in Local Code Search</b> &quot;
+              Proceedings of the IEEE Symposium on Visual Languages and
+              Human-Centric Computing (VL/HCC 2014), Melbourne,
+              Australia. (<i>Acceptance Rate = 30%</i>). <b>Best Long
+                Paper Award</b>
+              <a type="button" class="btn btn-xs btn-primary"
+                href="http://dx.doi.org/10.1109/VLHCC.2014.6883025">DOI</a>
+            </p>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <p> H. Chen, K. Damevski. &quot; <b> A Teaching Model for
+              Development of Sensor-Driven Mobile Applications </b>
+            &quot; Proceedings of the ACM Conference on Innovation
+            and Technology in Computer Science Education (ITiCSE
+            2014), Uppsala, Sweden, 2014. (<i>Acceptance Rate = 35%</i>)
+            <a type="button" class="btn btn-xs btn-primary" href="http://dx.doi.org/10.1145/2591708.2591719">DOI</a>
+          </p>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <p> W. Snipes, E. Murphy-Hill, T. Fritz, M. Vakilian,
+            K. Damevski, A. Nair, D. Shepherd. &quot; <b> A Practical
+              Guide to Analyzing IDE Usage Data.</b> &quot;. The Art and
+            Science of Analyzing Software Data. <i>Book Chapter</i>
+            <a type="button" class="btn btn-xs btn-primary"
+              href="http://store.elsevier.com/The-Art-and-Science-of-Analyzing-Software-Data/Christian-Bird/isbn-9780124115194/">Elsevier</a>
+          </p>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <p> K. Damevski, D. Shepherd, L. Pollock. &quot; <b> A Case
+              Study of Paired Interleaving for Evaluating Code Search Techniques
+            </b> &quot;, IEEE Conference on Software Maintenance and
+            Reengineering - Working Conference on Reverse Engineering
+            (CSMR-WCRE). 2014. (<i>Acceptance Rate = 31%</i>)
+            <a type="button" class="btn btn-xs btn-primary"
+              href="http://dx.doi.org/10.1109/CSMR-WCRE.2014.6747225">DOI</a>
+          </p>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <p> X. Ge, D. Shepherd,
+            K. Damevski. E. Murphy-Hill. &quot <b> How the Sando
+              Search Tool Recommends Queries</b> &quot, IEEE Conference
+            on Software Maintenance and Reengineering - Working
+            Conference on Reverse Engineering (CSMR-WCRE), Tool
+            Track. 2014. (<i>Acceptance Rate = 50%</i>)
+            <a type="button" class="btn btn-xs btn-primary"
+              href="http://dx.doi.org/10.1109/CSMR-WCRE.2014.6747210">DOI</a>
+          </p>
+        </li>
+      </ul>
+
+      <li><b>2013</b></li>
+
+      <ul>
+        <li>
+          <p> B. Altayeb, K. Damevski. &quot; <b>Utilizing and
+              Enhancing Software Modeling Environments to Teach Mobile
+              Application Design </b>, &quot; Journal of Computing
+            Education in Colleges, volume 28, issue 6, pp: 57-64. 2013.
+            (<i>Acceptance Rate = 50%</i>)
+            <a type="button" class="btn btn-xs btn-primary" href="http://dl.acm.org/citation.cfm?id=2460168">ACM</a>
+          </p>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <p> H. Chen, K. Damevski, W. Edwards. &quot; <b>Infusing
+              Cyber-Physical Systems Concepts into Introductory
+              Computer Science Courses</b>, &quot; Journal of Computing
+            Education in Colleges, volume 28, issue 6, pp: 26-34. 2013.
+            (<i>Acceptance Rate = 50%</i>)
+            <a type="button" class="btn btn-xs btn-primary" href="http://dl.acm.org/citation.cfm?id=2460164">ACM</a>
+          </p>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <p>K. Damevski, B. Altayeb, H. Chen, D. Walter. &quot; <b>
+              Teaching Cyber-Physical Systems to Computer Scientists via
+              Modeling and Verification</b> &quot;. Proceeding of 44th
+            Annual SIGCSE Technical Symposium on Computer Science
+            Education, Denver, CO, 2013. (<i>Acceptance Rate = 37.8%</i>)
+            <a type="button" class="btn btn-xs btn-primary" href="http://dl.acm.org/citation.cfm?id=2445365">ACM</a>
+          </p>
+        </li>
+      </ul>
+
+      <li><b>2012</b></li>
+
+
+      <ul>
+        <li>
+          <p>K. Damevski, M. Muralimanohar. &quot; <b>Interactive Refactoring for
+              GPU Parallelization of Affine Loops</b> &quot;. Technical Report.
+            <a type="button" class="btn btn-xs btn-primary" href="files/ek-tr.pdf">Preprint</a>
+          </p>
+        </li>
+      </ul>
+
+
+      <ul>
+        <li>
+          <p>K. Damevski, D. Shepherd, L. Pollock. &quot; <b>An Implicit
+              Feedback-based Approach to the Evaluation of Text Analysis Techniques
+              for Software Engineering</b> &quot;. Proceedings of the 1st International
+            Workshop on on the Next Five Years of Text Analysis in Software Maintenance
+            (TAinSM 2012), Riva de Garda, Italy, 2012.
+            <a type="button" class="btn btn-xs btn-primary" href="files/interleaving.pdf">Preprint</a>
+          </p>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+            <p class="text-primary">D. Shepherd, K. Damevski, B. Ropski,
+              T. Fritz. &quot; <b>Sando: An Extensible Local Code Search
+                Framework</b> &quot;. Proceedings of the 20th
+              International Symposium on the Foundations of Software
+              Engineering (FSE 2012) -- Tools Track, Raleigh, North Carolina, 2012.
+              <a type="button" class="btn btn-xs btn-primary" href="http://dl.acm.org/citation.cfm?id=2393612">ACM</a>
+            </p>
+        </li>
+
+      </ul>
+
+      <ul>
+        <li>
+          <p>Kostadin Damevski. &quot; <b>Tool Support for Efficient
+              Programming of Graphics Processing Units.</b> &quot;
+            Bridging Mathematics, Statistics, Engineering and
+            Technology. Edited by Bourama Toni, Keith Williamson,
+            Nasser Ghariban, Dawit Haile, and Zhifu Xie.
+            Springer Proceedings in Mathematics and Statistics 24.
+            <i>Book Chapter</i>
+            <a type="button" class="btn btn-xs btn-primary"
+              href="http://link.springer.com/book/10.1007/978-1-4614-4559-3/page/1">Springer</a>
+          </p>
+        </li>
+      </ul>
+
+      <li><b>2011</b></li>
+
+      <ul>
+        <li>
+          <p>J. Wang, K. Damevski, H. Chen. &quot; <b>Model Refinement
+              and Data Filtering in High-Tunnel Greenhouse Sensor Network</b> &quot;
+            Proceedings of 7th ACM International Symposium on QoS and Security for
+            Wireless and Mobile Networks (Q2SWINET 2011), Miami Beach, Florida, 2011.
+            <a type="button" class="btn btn-xs btn-primary" href="http://dl.acm.org/citation.cfm?id=2069113">ACM</a>
+          </p>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <p> K. Damevski, M. Muralimanohar. &quot; <b>A Refactoring Tool
+              to Extract GPU Kernels</b> &quot;. Proceedings of the 2011 Workshop
+            on Refactoring Tools (WRT 2011), in conjuction with the International
+            Conference on Software Engineering (ICSE 2011), Honolulu, Hawaii, 2011.
+            <a type="button" class="btn btn-xs btn-primary"
+              href="http://dl.acm.org/citation.cfm?id=1984732.1984739">ACM</a>
+          </p>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <p> K. Damevski, T. Dahlgren. &quot; <b>Parallel Object
+              Contracts for High Performance Computing</b>
+            &quot;. Proceedings of the 2011 Workshop on High-Level
+            Programming Models and Supportive Environments (HIPS 2011), in
+            conjuction with the IEEE International Parallel and
+            Distributed Processing Symposium (IPDPS 2011), Anchorage,
+            Alaska, 2011.
+            <a type="button" class="btn btn-xs btn-primary" href="http://dx.doi.org/10.1109/IPDPS.2011.263">DOI</a>
+          </p>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <p>J. Wang, H. Chen, K. Damevski, J. Liu,
+            &quot; <b>Mobility-tolerant, Efficient Multicast in Mobile
+              Cloud Applications</b>&quot;. Proceedings of the 4th
+            International ICST Conference on Mobile Wireless Middleware,
+            Operating Systems, and Applications (MOBILWARE 2011), London,
+            UK, 2011.
+            <a type="button" class="btn btn-xs btn-primary"
+              href="http://www.springerlink.com/content/u28753t582746315/">Springer</a>
+          </p>
+        </li>
+      </ul>
+
+      <li><b>2010</b></li>
+
+      <ul>
+        <li>
+          <p> K. Damevski. &quot; <b>Offline Contract Enforcement for
+              High Performance Computing</b> &quot;. Concurrency and
+            Computation: Practice and Experience, <i>vol. 23, issue
+              13, pp: 1465-1473</i>, 2010.
+            <a type="button" class="btn
+                              btn-xs btn-primary"
+              href="http://onlinelibrary.wiley.com/doi/10.1002/cpe.1702/abstract">Wiley</a>
+          </p>
+        </li>
+      </ul>
+
+      <li><b>2009</b></li>
+
+      <ul>
+        <li>
+          <p>K. Damevski. &quot;
+            <b>Expressing Measurement Units in Interfaces for Scientific
+              Component Software</b> &quot;. In Proceedings of the 2009
+            Workshop on Component-Based High Performance Computing,
+            (in conjuction with the 22nd Supercomputing Conference (SC09)),
+            Portland, Oregon, 2009.
+            <a type="button" class="btn btn-xs btn-primary" href="files/dims.pdf">Preprint</a>
+          </p>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <p> K. Damevski, H. Chen, T. Dahlgren. &quot;
+            <b>Reducing Component Contract Overhead by Offloading
+              Enforcement</b> &quot;. Proceedings of the 2009 Workshop on
+            Component-Based High Performance Computing, (in conjuction with
+            the 22nd Supercomputing Conference (SC09)), Portland,
+            Oregon, 2009. <a type="button" class="btn btn-xs btn-primary" href="files/contracts.pdf">Preprint</a>
+          </p>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <p>K. Damevski, H.Chen. &quot;
+            <b>Automated Provenance Collection for CCA Component
+              Assemblies</b> &quot;. In Proceedings of the 9th International
+            Conference on Computational Science (ICCS 2009), Baton Rouge,
+            Louisiana, 2009. <a type="button" class="btn btn-xs btn-primary" href="files/ccaprov.pdf">Preprint</a>
+          </p>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+            <p class="text-primary">S. Yau, K. Damevski, V. Karamchety, S. Parker, D. Zorin. &quot;
+              <b>Application Aware Management of Parallel Simulation
+                Collection</b> &quot;. In Proceedings of the 14th ACM
+              SIGPLAN Symposium on Principles and Practice of Parallel
+              Programming (PPOPP 2009), Raleigh, North Carolina, 2009.
+              <a type="button" class="btn btn-xs btn-primary" href="http://dl.acm.org/citation.cfm?id=1504184">ACM</a>
+            </p>
+        </li>
+      </ul>
+
+      <li><b>2008</b></li>
+
+      <ul>
+        <li>
+          <p>K. Damevski, A. Khan, S. Parker. &quot; <b>Scientific
+              Workflows and Components: Together at Last!</b>&quot;. In
+            Proceedings of the 3rd Workshop on Component-Based
+            High-Performance Computing (CBHPC 2008), Karlsruhe, Germany,
+            2008. <a type="button" class="btn btn-xs btn-primary" href="files/keplercca.pdf">Preprint</a>
+          </p>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+            <p>S. Yau, K. Damevski, D. Zorin, V. Karamcheti, S. Parker. &quot;
+              <b>Result Reuse in Design Space Exploration: A Study in
+                System Support for Interactive Parallel
+                Computing</b>&quot;. In Proceedings of the 22
+              International Parallel and Distributed Processing
+              Symposium (IPDPS 2008), Miami, Florida, 2008.
+              <a type="button" class="btn btn-xs btn-primary"
+                href="http://dx.doi.org/10.1109/IPDPS.2008.4536324">DOI</a>
+            </p>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <p>K. Damevski, K. Zhang, S. Parker &quot;<b>Practical
+              Parallel Remote Method Invocation for the Babel
+              Compiler</b>&quot;. In Proceedings of the
+            HPC-GECO/CompFrame'07 Workshop, Montreal, Canada, 2008.
+            <a type="button" class="btn btn-xs btn-primary" href="files/babel-mxn.pdf">Preprint</a>
+          </p>
+        </li>
+      </ul>
+
+      <li><b>2007</b></li>
+
+      <ul>
+        <li>
+          <p>K.Damevski, A. Swaminathan, S. Parker. &quot;<b>Highly
+              Scalable Distributed Component Framework for Scientific
+              Computing</b>&quot;. In Proceedings of the 3rd
+            International Conference on High Performance Computing and
+            Communication (HPCC 2007), Houston, Texas,
+            2007. <a type="button" class="btn btn-xs btn-primary" href="files/ccaloop.pdf">Preprint</a>
+          </p>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <p>K.Damevski, A. Swaminathan, S. Parker. &quot;<b>CCALoop:
+              Scalable Design of a Distributed Component
+              Framework</b>&quot;. In Proceedings of the 16th
+            International High Performance Distributed Computing
+            Symposium (HPDC 2007), Monterey, California,
+            2007. <i>(Poster/Short Paper)</i>
+            <a type="button" class="btn btn-xs btn-primary" href="files/ccaloop-poster.pdf">Preprint</a>
+          </p>
+        </li>
+      </ul>
+
+      <li><b>2006</b></li>
+
+      <ul>
+        <li>
+          <p>F. Bertrand, R. Bramley, D. Bernholdt, J. Kohl,
+            J. Larson, A. Sussman and K. Damevski. &quot;<b>Data
+              Redistribution and Remote Method Invocation for Coupled
+              Components</b>&quot;. Journal of Parallel and Distributed
+            Computing, Volume 66, Issue 7, 2006.</p>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <p>Kostadin Damevski. &quot;<b>Component Model
+              Interoperability for Scientific
+              Computing</b>&quot;.&nbsp; PhD Thesis. University of
+            Utah, Dec, 2006.
+            <a type="button" class="btn btn-xs btn-primary" href="files/phdthesis.pdf">Preprint</a>
+          </p>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <p>David E. Bernholdt, Benjamin A. Allan, Robert Armstrong,
+            Felipe Bertrand, Kenneth Chiu, Tamara L. Dahlgren,
+            Kostadin Damevski, Wael R. Elwasif, Thomas G. W. Epperly,
+            Madhusudhan Govindaraju, Daniel S. Katz, James A. Kohl,
+            Manoj Krishnan, Gary Kumfert, J. Walter Larson, Sophia
+            Lefantzi, Michael J. Lewis, Allen D. Malony, Lois
+            C. McInnes, Jarek Nieplocha, Boyana Norris, Steven G.
+            Parker, Jaideep Ray, Sameer Shende, Therisa L. Windus, and
+            Shujia Zhou, <b> &quot;A Component Architecture for High
+              Performance Scientific Computing&quot;</b> International
+            Journal on High-Performance Computing Applications (2006)
+            ACTS Collection special issue.</p>
+        </li>
+      </ul>
+
+      <li><b>2005</b></li>
+
+      <ul>
+        <li>
+          <p>Kostadin Damevski and Steven Parker. &quot;<b>M-by-N Data
+              Redistribution through Parallel Remote Method
+              Invocation</b>&quot;. International Journal of High
+            Performance Computing Applications 2005 19: 389-398.
+            <a type="button" class="btn btn-xs btn-primary" href="http://dx.doi.org/10.1177/1094342005056136">DOI</a>
+          </p>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+            <p class="text-primary">F. Bertrand, R. Bramley, D. Bernholdt, J. Kohl,
+              J. Larson, A. Sussman and K.Damevski. &quot;<b>Data
+                Redistribution and Remote Method Invocation in Parallel
+                Component Architectures</b>&quot;. In Proceedings of the
+              19th International Parallel and Distributed Processing
+              Symposium (IPDPS 2005) <b>(Best Paper Award)</b>
+              <a type="button" class="btn btn-xs btn-primary" href="http://dl.acm.org/citation.cfm?id=1054380">ACM</a>
+            </p>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <p>Kostadin Damevski. &quot;<b>Generating Bridges Between
+              Heterogeneous Component Models</b>&quot;. In Proceedings
+            of the 7th Generative Programming and Component
+            Engineering (GPCE) Young Researchers Workshop
+            (2005). Edited by Matthew J. Rutherford. (ISBN
+            9985-894-89-8).
+            <a type="button" class="btn btn-xs btn-primary" href="files/gpce-yrw-05.pdf">Preprint</a>
+          </p>
+        </li>
+      </ul>
+
+      <li><b>2004</b></li>
+
+      <ul>
+        <li>
+          <p>Kostadin Damevski and Steven Parker. &quot;<b>Imprecise
+              Exceptions in Distributed Parallel Components</b>&quot;.
+            In Proceedings of the 9th European Conference on Parallel
+            Computing (EURO-PAR
+            2004). <a type="button" class="btn btn-xs btn-primary" href="files/ImpreciseX.pdf">Preprint</a></p>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <p>Keming Zhang, Kostadin Damevski, Venkatanand
+            Venkatachalapathy and Steven G. Parker. &quot;<b>SCIRun2:
+              A CCA Framework for High Performance Computing</b>&quot;,
+            9th International Workshop on High-Level Parallel
+            Programming Models and Supportive Environments
+            <a type="button" class="btn btn-xs btn-primary" href="files/hips2004-SR2.pdf">Preprint</a>
+          </p>
+        </li>
+      </ul>
+
+      <li><b>2003</b></li>
+
+      <ul>
+        <li>
+          <p> Kostadin Damevski and Steven Parker. &quot;<b>Parallel
+              Remote Method Invocation and M-by-N Data
+              Redistribution</b>&quot;. In Proceedings of the Fourth Los
+            Alamos Computer Science Institute Symposium. October,
+            2003. <a type="button" class="btn btn-xs btn-primary" href="files/MxNPaperR.pdf">Preprint</a>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <p>Kostadin Damevski. &quot;<b>Parallel Component
+              Interaction with an Interface Definition Language
+              Compiler</b>&quot;.&nbsp; Master's Thesis. University of
+            Utah, May, 2003.
+            <a type="button" class="btn btn-xs btn-primary" href="files/thesis.pdf">Preprint</a>
+        </li>
+      </ul>
+
+
+    </ul>
+
+
+
+  </div>
+
+  <div class="row">&nbsp;</div>
+  <footer id="footer">
+    <div class="container">
+    <a href="#top">Back to top</a><br>
+    &copy; Copyright Kostadin Damevski, 2023. Theme by <a href="https://bootswatch.com" target="_blank">Bootswatch</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-1250424-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</body>
+
+</html>
