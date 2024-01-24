@@ -114,48 +114,10 @@
 
   <div class="row">&nbsp;</div>
 
-  <div class="container" id="projects">
-    <h3>Research Projects</h3>
-
-    <div class="row">
-      <div class="col-md-4 col-lg-3 col-sm-5 col-xs-5">
-        <img class="img-thumbnail" src="res_icons/emo-overview.png" />
-      </div>
-      <div class="col-lg-9 col-md-8 col-sm-6 col-xs-6">
-        <b>Emotions in Software Engineering Text</b> -- Detecting emotions expressed in software engineering communication channels (e.g., comments on pull requests, issue discussions, chats) in order to reduce toxic or incivil comments, undestand developer's emotion towards a specific aspect or feature or of the project, etc. Contribute to a more sustainable open source software eco-system. [<a href="files/Emotion_Classification_ASE_2022.pdf">ASE 2022</a>]
-      </div>
-    </div>
-    <div class="row">&nbsp;</div>
-    <div class="row">
-      <div class="col-md-4 col-lg-3 col-sm-5 col-xs-5">
-        <img class="img-thumbnail" src="res_icons/multi-source.png" />
-      </div>
-      <div class="col-lg-9 col-md-8 col-sm-6 col-xs-6">
-        <b>Changeset-based Bug Localization</b> -- Helping developers to localize bugs (using bug reports) to the changeset that induced them. Changesets (or diffs) can be more useful for fixing bugs than static source code (e.g., methods or classes) as they encode the change that created the bug and include a (usually) meaningful message. [<a href="https://arxiv.org/abs/2112.14169">ICSE 2022</a>]
-      </div>
-    </div>
-    <div class="row">&nbsp;</div>
-    <div class="row">
-      <div class="col-md-4 col-lg-3 col-sm-5 col-xs-5">
-        <img class="img-thumbnail mx-auto" src="res_icons/alexa.jpg" />
-      </div>
-      <div class="col-lg-9 col-md-8 col-sm-6 col-xs-6">
-        <b>Conversational Interfaces for Software Development</b> -- Use conversational interfaces for 1) end-users to program cyber-physical systems (e.g., UAVs); 2) novices to find software development information on the Web; 3) developers to improve the quality of bug reporting [<a href="files/web_cq_IST_2022.pdf">Elsevier IST 2022</a>]
-      </div>
-    </div>
-    <div class="row">&nbsp;</div>
-    <div class="row">
-      <div class="col-md-4 col-lg-3 col-sm-5 col-xs-5">
-        <img class="img-thumbnail" src="res_icons/NVD_example.png" />
-      </div>
-      <div class="col-lg-9 col-md-8 col-sm-6 col-xs-6">
-        <b>Improved Software Vulnerability Data</b> -- Patches to known software vulnerabilities, as maintained by the National Vulnerability Dataset are often noisy or incorrect. Our work aims to understand and improve the quality of this important data source. It also aims to create a corpus of explained patches that can be leveraged in education.
-      </div>
-    </div>
-  </div>
+  <div id="projects" class="load" onclick="loadPage('#loadprojects', 'projects.html')"> </div>
+  <div id="loadprojects"> </div>
 
   <div class="row">&nbsp;</div>
-
 
   <div id="publications" class="load" onclick="loadPage('#loadpubs', 'pubs.html')"> </div>
   <div id="loadpubs"> </div>
