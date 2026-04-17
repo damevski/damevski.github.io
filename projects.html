@@ -1,45 +1,64 @@
 <!--- projects.html -->
 
-
-<div class="container" id="projects">
+<div class="container" id="projects-section">
     <h3>Research Projects</h3>
 
-    <div class="row">
-      <div class="col-md-4 col-lg-3 col-sm-5 col-xs-5">
-        <img class="img-thumbnail" src="res_icons/emo-overview.png" />
+    <div class="row align-items-start g-4 mb-4">
+      <div class="col-12 col-md-4 col-lg-3 text-center">
+        <img class="img-thumbnail project-thumb" src="res_icons/emo-overview.png" alt="Developer conversation analysis" />
       </div>
-      <div class="col-lg-9 col-md-8 col-sm-6 col-xs-6">
-        <b>Conversational Analysis in Software Engineering</b> -- This research views software engineering as a conversational activity. It studies how developers communicate through multi-party discussions in issues, pull requests, chats, and forums, and how meaning, intent, and coordination emerge over time. The work analyzes conversations using linguistic, social, and emotional signals to understand how interactions evolve and influence decision-making and community health. It also explores the role of AI as a conversational partner in software development. The research builds datasets and systems that learn from developer conversations to extract key information from multi-party discussion threads, anticipate and moderate derailing discussions, and improve the clarity and effectiveness of communication. The long-term goal is to support collaboration, quality software, and sustainable practices in software development communities. [<a href="files/Emotion_Classification_ASE_2022.pdf">ASE 2022</a>, <a href="https://arxiv.org/pdf/2312.10297">ICSE 2024a</a>, <a href="https://arxiv.org/pdf/2312.09731">ICSE 2024b</a>, <a href="https://arxiv.org/pdf/2512.15031">ICSE 2026</a>]
-      </div>
-    </div>
-    <!-- <div class="row">&nbsp;</div>
-    <div class="row">
-      <div class="col-md-4 col-lg-3 col-sm-5 col-xs-5">
-        <img class="img-thumbnail mx-auto" src="res_icons/chatgpt-convo.png" />
-      </div>
-      <div class="col-lg-9 col-md-8 col-sm-6 col-xs-6">
-        <b>Conversational Interfaces for Software Engineering</b> -- We design and develop conversational interfaces for 1) end-users to program cyber-physical systems (e.g., UAVs); 2) software engineering novices to find software development information on the Web; 3) developers to improve the quality of bug reporting [<a href="https://doi.org/10.1145/3649217.3653570">ITiCSE 2024</a>,<a href="files/web_cq_IST_2022.pdf">Elsevier IST 2022</a>]
-      </div>
-    </div> -->
-    <div class="row">&nbsp;</div>
-    <div class="row">
-      <div class="col-md-4 col-lg-3 col-sm-5 col-xs-5">
-        <img class="img-thumbnail" src="res_icons/NVD_example.png" />
-      </div>
-      <div class="col-lg-9 col-md-8 col-sm-6 col-xs-6">
-        <b>Software Security and Vulnerability Data</b> -- Large language models are rapidly being integrated into software engineering, yet their security awareness and reliability remain limited. Our work aims to evaluate and improve how these models handle vulnerable code and generate fixes. It also seeks to enhance the quality of vulnerability datasets, which are essential for training predictive and repair models. By addressing both the behavior of LLMs and the integrity of underlying data, we aim to make automated tools more trustworthy for developers. Ultimately, this vision is to enable safer use of AI in programming workflows while producing higher-quality security data for research and practice. [<a href="files/UQ_for_Software_Vulnerability_Data___TSE_2025.pdf">TSE 2025</a>, </a><a href="files/LLM_Based_Cleaning_of_Software_Vulnerability_Data.pdf">JSS 2025</a>, <a href="https://arxiv.org/abs/2502.14202">EMSE 2025</a>]
-      </div>
-    </div>
-    <div class="row">&nbsp;</div>
-      <div class="row">
-      <div class="col-md-4 col-lg-3 col-sm-5 col-xs-5">
-        <img class="img-thumbnail" src="res_icons/multi-source.png" />
-      </div>
-      <div class="col-lg-9 col-md-8 col-sm-6 col-xs-6">
-        <b>Changeset-Centric Software Analytics</b> 
-      This research explores how fine-grained software changesets can be leveraged to support developer tasks and improve software quality. By modeling and mining sequences of changes, the work advances techniques for feature location, bug localization, and just-in-time defect prediction. It also investigates how changeset-based representations can be integrated with modern machine learning approaches, enabling scalable code clone detection, prediction of developer activity, and automated quality assurance.
-      The vision is to create a comprehensive changeset-centric framework that enhances developer productivity and software reliability through data-driven insights and tools. [<a href="files/report_CSUR_2022.pdf">CSUR 2024</a>, <a href="https://arxiv.org/abs/2112.14169">ICSE 2022</a>]
+      <div class="col-12 col-md-8 col-lg-9 project-body">
+        <b>Conversational Analysis in Software Engineering.</b>
+        Software engineering is fundamentally a conversational activity, conducted among humans and, increasingly, with AI assistants.
+        We study how meaning, intent, and tension emerge across pull requests, issue threads, chats, forums, and human&ndash;AI coding sessions using linguistic, social, and emotional signals.
+        We build datasets and models that anticipate conversational derailment, extract opinions and decisions from multi-party discussions,
+        diagnose breakdowns in human&ndash;AI interaction (e.g., vibe coding difficulties),
+        and surface the communication patterns that shape software quality and community health.
+        <br/>
+        <span class="text-muted">Recent:</span>
+        <a href="https://arxiv.org/pdf/2512.15031">ICSE 2026</a>,
+        <a href="https://arxiv.org/pdf/2312.10297">ICSE 2024a</a>,
+        <a href="https://arxiv.org/pdf/2312.09731">ICSE 2024b</a>,
+        <a href="files/Emotion_Classification_ASE_2022.pdf">ASE 2022</a>.
       </div>
     </div>
 
-  </div>
+    <div class="row align-items-start g-4 mb-4">
+      <div class="col-12 col-md-4 col-lg-3 text-center">
+        <img class="img-thumbnail project-thumb" src="res_icons/NVD_example.png" alt="Security of agentic AI in software engineering" />
+      </div>
+      <div class="col-12 col-md-8 col-lg-9 project-body">
+        <b>Security of Agentic AI in Software Engineering.</b>
+        Agentic AI systems are increasingly writing, repairing, and reviewing code, but their security behavior and the data they rely on remain unreliable.
+        We empirically characterize when and why agentic automated program repair (APR) systems introduce vulnerabilities,
+        build APR-specific threat models and red-teaming toolkits,
+        develop agentic exploit engines that validate whether reported vulnerabilities are practically exploitable,
+        and create techniques to clean, filter, and quantify uncertainty in software vulnerability datasets.
+        The goal is safer AI-assisted programming workflows and higher-quality security data for research and practice.
+        <br/>
+        <span class="text-muted">Recent:</span>
+        <a href="files/UQ_for_Software_Vulnerability_Data___TSE_2025.pdf">TSE 2025</a>,
+        <a href="files/LLM_Based_Cleaning_of_Software_Vulnerability_Data.pdf">JSS 2025</a>,
+        <a href="https://arxiv.org/abs/2502.14202">EMSE 2025</a>.
+      </div>
+    </div>
+
+    <div class="row align-items-start g-4 mb-4">
+      <div class="col-12 col-md-4 col-lg-3 text-center">
+        <img class="img-thumbnail project-thumb" src="res_icons/multi-source.png" alt="Changeset-centric software analytics" />
+      </div>
+      <div class="col-12 col-md-8 col-lg-9 project-body">
+        <b>Changeset-Centric Software Analytics.</b>
+        Fine-grained code changes carry more information than snapshots of a repository.
+        We model and mine sequences of changesets to improve bug localization, feature location, and just-in-time defect prediction,
+        and we extend changeset-centric methods to assess the risk of AI-generated and mixed-authorship changes,
+        scale up code clone detection, and recognize developer activity.
+        The long-term vision is a changeset-centric framework for developer productivity and software reliability in human- and AI-authored codebases.
+        <br/>
+        <span class="text-muted">Recent:</span>
+        <a href="files/report_CSUR_2022.pdf">CSUR 2022</a>,
+        <a href="https://arxiv.org/abs/2112.14169">ICSE 2022</a>.
+      </div>
+    </div>
+
+</div>

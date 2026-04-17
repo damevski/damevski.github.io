@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="Kostadin Kosta Damevski kostadamevski damevski">
+  <meta name="description" content="Kostadin Damevski, Professor of Computer Science at Virginia Commonwealth University. Research in machine learning and natural language processing for software engineering, software security, and developer communication.">
   <meta name="author" content="Kostadin Damevski">
 
   <title>Kostadin Damevski, Ph.D.</title>
@@ -14,26 +14,116 @@
   <link href="bootstrap.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script>   
-  function loadPage(divloc, page) {
-    $.get(page, function(data){
-        console.log(divloc);
-        $(divloc).empty();
-        $(divloc).html(data);
-    });
-  }
-  $(document).ready(function(){
-             $('.load').trigger("click");
-  });
+  <style>
+    /* Spacing for fixed navbar */
+    body {
+      padding-top: 72px;
+      line-height: 1.6;
+    }
 
+    /* Anchor links land below the fixed navbar instead of behind it */
+    html {
+      scroll-padding-top: 80px;
+      scroll-behavior: smooth;
+    }
+
+    /* Comfortable reading measure for prose */
+    .project-body p,
+    .panel-body {
+      max-width: 72ch;
+    }
+
+    /* Hero intro paragraph: a bit larger, and with a little breathing room */
+    .hero-intro {
+      font-size: 1.1rem;
+      margin-bottom: 0;
+    }
+
+    /* Keep publication / project button groups neat */
+    .btn-sm {
+      white-space: nowrap;
+      margin-right: 0.25rem;
+      margin-bottom: 0.25rem;
+    }
+
+    /* Section headings get more breathing room */
+    h3 {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    h4 {
+      margin-top: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Project thumbnails never larger than their column */
+    .project-thumb {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Space between major sections */
+    .section-block {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+
+    /* Print-friendly */
+    @media print {
+      .navbar,
+      footer {
+        display: none !important;
+      }
+
+      body {
+        padding-top: 0;
+      }
+
+      a[href]:after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+        color: #555;
+      }
+    }
+
+    /* Smaller nav on phones so logo text doesn't wrap */
+    @media (max-width: 480px) {
+      .navbar-brand {
+        font-size: 1rem;
+      }
+    }
+  </style>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script>
+    // Modular page loader: fetch a fragment file and inject its HTML into a target div.
+    // Uses an explicit $.get call for each section rather than trigger("click") on
+    // inline onclick attributes -- this avoids silent failures when inline handlers
+    // aren't invoked consistently across jQuery builds / environments.
+    function loadPage(selector, page) {
+      $.get(page, function(data) {
+        $(selector).html(data);
+      }).fail(function() {
+        $(selector).html(
+          '<div class="container text-danger"><em>Could not load ' + page + '.</em></div>'
+        );
+      });
+    }
+
+    $(document).ready(function() {
+      loadPage('#projects',     'projects.html');
+      loadPage('#publications', 'pubs.html');
+      loadPage('#teaching',     'teach.html');
+      loadPage('#students',     'students.html');
+    });
   </script>
 </head>
 
 <body>
 
   <!-- Fixed navbar -->
-  <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
     <div class="container">
       <a href="../" class="navbar-brand">Kostadin Damevski @ VCU</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
@@ -43,13 +133,13 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#projects">Research Projects</a>
+            <a class="nav-link" href="#projects">Research</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#publications">Publications</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="#teaching">Teaching</a>
+            <a class="nav-link" href="#teaching">Teaching</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#students">Students</a>
@@ -61,7 +151,7 @@
         <ul class="navbar-nav ms-md-auto">
           <li class="nav-item">
             <a target="_blank" rel="noopener" class="nav-link"
-              href="http://scholar.google.com/citations?user=3f847ugAAAAJ&hl=en&oi=ao"><i class="bi"></i> Google Scholar</a>
+              href="http://scholar.google.com/citations?user=3f847ugAAAAJ&hl=en&oi=ao"><i class="bi bi-mortarboard"></i> Google Scholar</a>
           </li>
           <li class="nav-item">
             <a target="_blank" rel="noopener" class="nav-link" href="http://github.com/damevski"><i
@@ -69,97 +159,48 @@
           </li>
           <li class="nav-item">
             <a target="_blank" rel="noopener" class="nav-link"
-              href="http://www.linkedin.com/pub/kostadin-damevski/0/14/b34"><i class="bi bi-linkedin"></i> LinkedIn</a>
+              href="http://www.linkedin.com/in/kostadin-damevski"><i class="bi bi-linkedin"></i> LinkedIn</a>
           </li>
         </ul>
       </div>
-      <!--/.nav-collapse -->
     </div>
-  </div>
+  </nav>
 
-  <div class="container">
-    <div class="row">&nbsp;</div>
-    <div class="row">&nbsp;</div>
-    <div class="row">&nbsp;</div>
-    <div class="page-header">
-      <div class="row">
-        <div class="col-lg-2 col-md-3 col-sm-3 col-xs-3">
-          <div class="row">
-            <img class="img-thumbnail" src="images/damevski22.jpg" />
-          </div>
+  <!-- Page header: photo + title/contact card + intro -->
+  <header class="container mt-4">
+    <div class="row align-items-start g-4">
+      <div class="col-12 col-md-3 text-center">
+        <img class="img-thumbnail" src="images/damevski22.jpg" alt="Kostadin Damevski" />
+      </div>
+      <div class="col-12 col-md-9">
+        <div class="panel-body mb-3">
+          Professor and Graduate Program Director<br/>
+          Co-Director, <a href="https://secentervcu.github.io/">Software Engineering Center</a><br/>
+          <a href="https://egr.vcu.edu/departments/computer/">Department of Computer Science</a><br/>
+          <a href="http://www.vcu.edu">Virginia Commonwealth University</a> &mdash; Richmond, Virginia<br/>
+          <b>Office:</b> Engineering Research Building, Rm. 2324<br/>
+          <b>Email:</b> <a href="mailto:kdamevski@vcu.edu">kdamevski@vcu.edu</a>
         </div>
-
-        <div class="col-lg-10 col-md-9 col-sm-8 col-xs-8">
-          <div class="row">&nbsp;</div>
-          <div class="panel panel-default">
-            <div class="panel-body">
-            Professor and Graduate Program Director<br/>
-            <a href="https://egr.vcu.edu/departments/computer/">Computer Science</a><br/>
-            <a href="http://www.vcu.edu">Virginia Commonwealth University</a> - Richmond, Virginia<br/>
-            <b>Office: Engineering Research Building Rm. 2324</b><br/>
-            Email: kdamevski at vcu.edu<br/>
-            </div>
-          </div>
-
-        </div>
+        <p class="hero-intro">I build machine learning and natural language processing systems that study and support how software developers communicate, reason about code, and handle security. My group's work spans three areas: analyzing multi-party developer conversations and human&ndash;AI interactions (pull requests, chats, issue threads, and coding assistants) to understand how meaning, intent, and tension emerge; evaluating and hardening the security of agentic AI systems that repair, generate, and modify code; and mining fine-grained code changes to help developers locate bugs, predict defects, and assess the risk of AI-generated edits.</p>
       </div>
     </div>
-  </div> <!-- /container -->
+  </header>
 
-  <div class="row">&nbsp;</div>
+  <!-- Fragment mount points. Populated by jQuery on DOM ready. -->
+  <div id="projects"     class="section-block"></div>
+  <div id="publications" class="section-block"></div>
+  <div id="teaching"     class="section-block"></div>
+  <div id="students"     class="section-block"></div>
 
-  <div class="container" id="intro">
-    <p>My current research interests are centered around using machine learning and natural language processing to solve problems
-      in software engineering, specifically, to facilitate automation of a number of tasks that software
-      developers commonly perform. For instance, my research has focused on helping developers locate the code
-      needed to fix a specific bug and to improve how developers search for relevant documentation on the Web. I'm also
-      interested in cybersecurity, i.e., writing secure code, and end-user programming. 
-
-    <p>At VCU, I co-lead the <a href="https://secentervcu.github.io/">Software Engineering Center</a>. A lot more details about what I do are on my <a href="files/damevski-vita.pdf">vita</a>.</p>
-    <p><i>I'm actively looking for collaborations with industry and
-        motivated graduate and undergraduate students to join my research
-        group. Please <a href="mailto:kdamevski@vcu.edu">contact me</a> if you are interested.</i></p>
-    </p>
-  </div>
-
-  <div id="projects" class="load my-5" onclick="loadPage('#loadprojects', 'projects.html')"> </div>
-  <div id="loadprojects"> </div>
-
-  <div class="row">&nbsp;</div>
-
-  <div id="publications" class="load my-5" onclick="loadPage('#loadpubs', 'pubs.html')"> </div>
-  <div id="loadpubs"> </div>
-
-  <div class="row">&nbsp;</div>
-
-  <div id="teaching" class="load my-5" onclick="loadPage('#loadteach', 'teach.html')"> </div>
-  <div id="loadteach"> </div>
-  
-  <div class="row">&nbsp;</div>
-
-  <div id="students" class="load my-5" onclick="loadPage('#loadstudents', 'students.html')"> </div>
-  <div id="loadstudents"> </div>
-
-  <div class="row">&nbsp;</div>
-  <footer id="footer">
-    <div class="container">
-    <a href="#top">Back to top</a><br>
-    &copy; Copyright Kostadin Damevski, 2025. Theme by <a href="https://bootswatch.com" target="_blank">Bootswatch</a>
+  <footer id="footer" class="border-top pt-3 pb-4">
+    <div class="container text-muted">
+      <a href="#top">Back to top</a><br>
+      &copy; Kostadin Damevski, 2026. Theme adapted from
+      <a href="https://bootswatch.com" target="_blank" rel="noopener">Bootswatch</a>.
     </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
-  <script>
-    (function (i, s, o, g, r, a, m) {
-      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-        (i[r].q = i[r].q || []).push(arguments)
-      }, i[r].l = 1 * new Date(); a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-    ga('create', 'UA-1250424-1', 'auto');
-    ga('send', 'pageview');
-  </script>
 
 </body>
 
