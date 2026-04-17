@@ -11,8 +11,23 @@
 
   <title>Kostadin Damevski, Ph.D.</title>
 
-  <link href="bootstrap.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <!-- Apply saved / OS-preferred theme before the page paints, to avoid a flash. -->
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem('theme');
+        var theme = stored ||
+          (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-bs-theme', theme);
+      } catch (e) {
+        document.documentElement.setAttribute('data-bs-theme', 'light');
+      }
+    })();
+  </script>
+
+  <!-- Bootswatch Sandstone 5.3 (Bootstrap 5.3-compatible, includes dark-mode support) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/sandstone/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css">
 
   <style>
     /* Spacing for fixed navbar */
@@ -69,6 +84,26 @@
       margin-bottom: 3rem;
     }
 
+    /* Subtle highlight for selected publications -- replaces the old full-blue text */
+    .selected-paper {
+      background-color: var(--bs-primary-bg-subtle);
+      border-left: 3px solid var(--bs-primary);
+      padding: 0.5rem 0.75rem;
+      border-radius: 0 0.25rem 0.25rem 0;
+    }
+
+    /* Theme toggle button: inherit nav-link look */
+    #theme-toggle {
+      background: none;
+      border: 0;
+      padding: 0.5rem 0.75rem;
+      color: inherit;
+      cursor: pointer;
+    }
+    #theme-toggle:hover {
+      opacity: 0.8;
+    }
+
     /* Print-friendly */
     @media print {
       .navbar,
@@ -94,30 +129,6 @@
       }
     }
   </style>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script>
-    // Modular page loader: fetch a fragment file and inject its HTML into a target div.
-    // Uses an explicit $.get call for each section rather than trigger("click") on
-    // inline onclick attributes -- this avoids silent failures when inline handlers
-    // aren't invoked consistently across jQuery builds / environments.
-    function loadPage(selector, page) {
-      $.get(page, function(data) {
-        $(selector).html(data);
-      }).fail(function() {
-        $(selector).html(
-          '<div class="container text-danger"><em>Could not load ' + page + '.</em></div>'
-        );
-      });
-    }
-
-    $(document).ready(function() {
-      loadPage('#projects',     'projects.html');
-      loadPage('#publications', 'pubs.html');
-      loadPage('#teaching',     'teach.html');
-      loadPage('#students',     'students.html');
-    });
-  </script>
 </head>
 
 <body>
@@ -161,6 +172,12 @@
             <a target="_blank" rel="noopener" class="nav-link"
               href="http://www.linkedin.com/in/kostadin-damevski"><i class="bi bi-linkedin"></i> LinkedIn</a>
           </li>
+          <li class="nav-item">
+            <button id="theme-toggle" class="nav-link" type="button"
+              aria-label="Toggle light / dark theme" title="Toggle light / dark theme">
+              <i id="theme-icon" class="bi bi-moon-stars"></i>
+            </button>
+          </li>
         </ul>
       </div>
     </div>
@@ -181,12 +198,12 @@
           <b>Office:</b> Engineering Research Building, Rm. 2324<br/>
           <b>Email:</b> <a href="mailto:kdamevski@vcu.edu">kdamevski@vcu.edu</a>
         </div>
-        <p class="hero-intro">I build machine learning and natural language processing systems that study and support how software developers communicate, reason about code, and handle security. My group's work spans three areas: analyzing multi-party developer conversations and human&ndash;AI interactions (pull requests, chats, issue threads, and coding assistants) to understand how meaning, intent, and tension emerge; evaluating and hardening the security of agentic AI systems that repair, generate, and modify code; and mining fine-grained code changes to help developers locate bugs, predict defects, and assess the risk of AI-generated edits.</p>
+        <p class="hero-intro">I build machine learning and AI systems that study and support how software developers communicate, reason about code, and handle security. My group works in three areas: developer and human&ndash;AI conversations, security of AI-assisted software engineering, and fine-grained code change analytics.</p>
       </div>
     </div>
   </header>
 
-  <!-- Fragment mount points. Populated by jQuery on DOM ready. -->
+  <!-- Fragment mount points. Populated by vanilla fetch() on DOM ready. -->
   <div id="projects"     class="section-block"></div>
   <div id="publications" class="section-block"></div>
   <div id="teaching"     class="section-block"></div>
@@ -200,7 +217,53 @@
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+  <!-- Bootstrap 5.3.8 bundle (Popper included, no jQuery required) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // ---------- Modular fragment loader (vanilla fetch, no jQuery) ----------
+    async function loadPage(selector, page) {
+      var target = document.querySelector(selector);
+      if (!target) return;
+      try {
+        var response = await fetch(page);
+        if (!response.ok) throw new Error(response.status + ' ' + response.statusText);
+        target.innerHTML = await response.text();
+      } catch (err) {
+        target.innerHTML =
+          '<div class="container text-danger"><em>Could not load ' + page + '.</em></div>';
+      }
+    }
+
+    // ---------- Light / dark theme toggle ----------
+    function updateThemeIcon(theme) {
+      var icon = document.getElementById('theme-icon');
+      if (!icon) return;
+      icon.className = theme === 'dark' ? 'bi bi-sun' : 'bi bi-moon-stars';
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      // Load the four content fragments in parallel.
+      loadPage('#projects',     'projects.html');
+      loadPage('#publications', 'pubs.html');
+      loadPage('#teaching',     'teach.html');
+      loadPage('#students',     'students.html');
+
+      // Reflect current theme on the toggle icon.
+      updateThemeIcon(document.documentElement.getAttribute('data-bs-theme'));
+
+      var toggle = document.getElementById('theme-toggle');
+      if (toggle) {
+        toggle.addEventListener('click', function () {
+          var current = document.documentElement.getAttribute('data-bs-theme');
+          var next = current === 'dark' ? 'light' : 'dark';
+          document.documentElement.setAttribute('data-bs-theme', next);
+          try { localStorage.setItem('theme', next); } catch (e) { /* storage blocked */ }
+          updateThemeIcon(next);
+        });
+      }
+    });
+  </script>
 
 </body>
 
