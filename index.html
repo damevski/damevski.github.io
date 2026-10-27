@@ -42,16 +42,78 @@
       scroll-behavior: smooth;
     }
 
+    /* A narrower reading column than Bootstrap's default: long publication
+       lists and prose read better at ~960px than at full width. */
+    .container {
+      max-width: 960px;
+    }
+
+    /* The navbar keeps a wider container so its links fit on one line */
+    .navbar > .container {
+      max-width: 1140px;
+    }
+    .navbar .nav-link {
+      white-space: nowrap;
+    }
+
+    /* ---------- Page header ---------- */
+    .profile-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.5rem;
+    }
+
+    /* Small, rounded portrait instead of a full column-width photo */
+    .profile-photo {
+      width: 128px;
+      height: 128px;
+      flex: 0 0 128px;
+      object-fit: cover;
+      object-position: center 20%;
+      border-radius: 50%;
+      border: 1px solid var(--bs-border-color);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    }
+
+    .profile-name {
+      font-size: 1.75rem;
+      font-weight: 600;
+      margin: 0 0 0.15rem;
+      line-height: 1.2;
+    }
+
+    .profile-title {
+      color: var(--bs-secondary-color);
+      margin-bottom: 0.75rem;
+    }
+
+    .profile-details {
+      font-size: 0.95rem;
+      line-height: 1.55;
+      margin-bottom: 0;
+    }
+
+    .profile-details .bi {
+      width: 1.25rem;
+      display: inline-block;
+      color: var(--bs-secondary-color);
+    }
+
+    /* Hero intro paragraph: slightly larger, set off with the theme's primary color */
+    .hero-intro {
+      font-size: 1.05rem;
+      margin: 1.5rem 0 0;
+      padding: 0.85rem 1.1rem;
+      border-left: 3px solid var(--bs-primary);
+      background-color: var(--bs-primary-bg-subtle);
+      border-radius: 0 0.375rem 0.375rem 0;
+      max-width: 72ch;
+    }
+
     /* Comfortable reading measure for prose */
     .project-body p,
     .panel-body {
       max-width: 72ch;
-    }
-
-    /* Hero intro paragraph: a bit larger, and with a little breathing room */
-    .hero-intro {
-      font-size: 1.1rem;
-      margin-bottom: 0;
     }
 
     /* Keep publication / project button groups neat */
@@ -61,18 +123,21 @@
       margin-bottom: 0.25rem;
     }
 
-    /* Section headings get more breathing room */
+    /* Section headings: more breathing room plus a hairline rule beneath */
     h3 {
-      margin-top: 2rem;
-      margin-bottom: 1rem;
+      margin-top: 2.5rem;
+      margin-bottom: 1.25rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid var(--bs-border-color);
     }
 
     h4 {
-      margin-top: 1.25rem;
+      margin-top: 1.5rem;
       margin-bottom: 0.5rem;
+      font-size: 1.1rem;
     }
 
-    /* Project thumbnails never larger than their column */
+    /* Project thumbnails: a bit smaller than before, never wider than their column */
     .project-thumb {
       max-width: 100%;
       height: auto;
@@ -80,16 +145,25 @@
 
     /* Space between major sections */
     .section-block {
-      margin-top: 3rem;
-      margin-bottom: 3rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
     }
 
-    /* Subtle highlight for selected publications -- replaces the old full-blue text */
+    /* Subtle highlight for selected publications */
     .selected-paper {
       background-color: var(--bs-primary-bg-subtle);
       border-left: 3px solid var(--bs-primary);
       padding: 0.5rem 0.75rem;
       border-radius: 0 0.25rem 0.25rem 0;
+    }
+
+    /* Venue abbreviation tag at the start of each publication, e.g. [NeurIPS26] */
+    .venue-tag {
+      font-family: var(--bs-font-monospace);
+      font-size: 0.85em;
+      font-weight: 600;
+      color: var(--bs-secondary-color);
+      white-space: nowrap;
     }
 
     /* Theme toggle button: inherit nav-link look */
@@ -122,8 +196,22 @@
       }
     }
 
-    /* Smaller nav on phones so logo text doesn't wrap */
-    @media (max-width: 480px) {
+    /* Phones: stack the header and shrink the portrait */
+    @media (max-width: 576px) {
+      .profile-header {
+        gap: 1rem;
+      }
+
+      .profile-photo {
+        width: 88px;
+        height: 88px;
+        flex-basis: 88px;
+      }
+
+      .profile-name {
+        font-size: 1.4rem;
+      }
+
       .navbar-brand {
         font-size: 1rem;
       }
@@ -162,10 +250,10 @@
         <ul class="navbar-nav ms-md-auto">
           <li class="nav-item">
             <a target="_blank" rel="noopener" class="nav-link"
-              href="http://scholar.google.com/citations?user=3f847ugAAAAJ&hl=en&oi=ao"><i class="bi bi-mortarboard"></i> Google Scholar</a>
+              href="https://scholar.google.com/citations?user=3f847ugAAAAJ&hl=en&oi=ao"><i class="bi bi-mortarboard"></i> Scholar</a>
           </li>
           <li class="nav-item">
-            <a target="_blank" rel="noopener" class="nav-link" href="http://github.com/damevski"><i
+            <a target="_blank" rel="noopener" class="nav-link" href="https://github.com/damevski"><i
                 class="bi bi-github"></i> GitHub</a>
           </li>
           <li class="nav-item">
@@ -183,24 +271,23 @@
     </div>
   </nav>
 
-  <!-- Page header: photo + title/contact card + intro -->
-  <header class="container mt-4">
-    <div class="row align-items-start g-4">
-      <div class="col-12 col-md-3 text-center">
-        <img class="img-thumbnail" src="images/damevski22.jpg" alt="Kostadin Damevski" />
-      </div>
-      <div class="col-12 col-md-9">
-        <div class="panel-body mb-3">
-          Professor and Graduate Program Director<br/>
-          Co-Director, <a href="https://secentervcu.github.io/">Software Engineering Center</a><br/>
-          <a href="https://egr.vcu.edu/departments/computer/">Department of Computer Science</a><br/>
-          <a href="http://www.vcu.edu">Virginia Commonwealth University</a> &mdash; Richmond, Virginia<br/>
-          <b>Office:</b> Engineering Research Building, Rm. 2324<br/>
-          <b>Email:</b> <a href="mailto:kdamevski@vcu.edu">kdamevski@vcu.edu</a>
-        </div>
-        <p class="hero-intro">I build machine learning and AI systems that study and support how software developers communicate, reason about code, and handle security. My group works in three areas: developer and human&ndash;AI conversations, security of AI-assisted software engineering, and fine-grained code change analytics.</p>
+  <!-- Page header: small portrait beside name, title, and contact details -->
+  <header class="container mt-4" id="top">
+    <div class="profile-header">
+      <img class="profile-photo" src="images/damevski22.jpg" alt="Kostadin Damevski" />
+      <div>
+        <h1 class="profile-name">Kostadin Damevski</h1>
+        <div class="profile-title">Professor of Computer Science &middot; <a href="http://www.vcu.edu">Virginia Commonwealth University</a></div>
+        <p class="profile-details">
+          <i class="bi bi-diagram-3"></i> Graduate Program Director, <a href="https://egr.vcu.edu/departments/computer/">Department of Computer Science</a><br/>
+          <i class="bi bi-people"></i> Co-Director, <a href="https://secentervcu.github.io/">VCU Software Engineering Center</a><br/>
+          <i class="bi bi-geo-alt"></i> Engineering Research Building, Rm. 2324 &middot; Richmond, Virginia<br/>
+          <i class="bi bi-envelope"></i> <a href="mailto:kdamevski@vcu.edu">kdamevski@vcu.edu</a>
+        </p>
       </div>
     </div>
+
+    <p class="hero-intro">I build machine learning and AI systems that study and support how software developers communicate, reason about code, and handle security. My group works in three areas: developer and human&ndash;AI conversations, security of AI-assisted software engineering, and fine-grained code change analytics.</p>
   </header>
 
   <!-- Fragment mount points. Populated by vanilla fetch() on DOM ready. -->
